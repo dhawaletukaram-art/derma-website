@@ -142,7 +142,7 @@ const Home = () => {
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <span className="text-xs uppercase tracking-[0.25em] text-magenta font-semibold">About</span>
-          <h2 className="font-serif text-4xl md:text-5xl mt-3 mb-6">A Modern Skin, Hair & Laser Destination</h2>
+          <h2 className="font-serif text-5xl md:text-6xl font-black mt-3 mb-6 leading-tight">A Modern Skin, Hair & Laser Destination</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
             Dermatiqua is one of Nagpur's most trusted dermatology destinations — offering full-spectrum care from medical skin disease management to high-end laser, hair restoration and anti-ageing procedures, all under one roof.
           </p>
@@ -158,9 +158,9 @@ const Home = () => {
         </div>
         <div className="grid grid-cols-2 gap-4">
           {["Acne Treatment Results","Pigmentation Correction","Hair Regrowth","Skin Rejuvenation"].map((c,i) => (
-            <div key={c} className={`rounded-2xl p-6 ${i%2===0 ? "bg-teal-light" : "bg-magenta-light"} ${i===1 ? "mt-8" : ""}`}>
-              <div className="font-serif text-xl text-foreground">{c}</div>
-              <div className="text-xs text-muted-foreground mt-2">Real patient transformations</div>
+            <div key={c} className={`rounded-2xl p-6 shadow-card hover:shadow-soft transition ${i%2===0 ? "bg-gradient-to-br from-teal-50 to-cyan-50 border border-teal-100" : "bg-gradient-to-br from-rose-50 to-pink-50 border border-rose-100"} ${i===1 ? "mt-8" : ""}`}>
+              <div className="font-serif text-xl font-bold text-foreground">{c}</div>
+              <div className="text-xs text-muted-foreground mt-2 font-medium">Real patient transformations</div>
             </div>
           ))}
         </div>

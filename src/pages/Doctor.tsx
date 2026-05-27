@@ -4,16 +4,18 @@ import { ArrowRight, GraduationCap, Award } from "lucide-react";
 
 const Doctor = () => (
   <div>
-    <section className="relative py-24 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 overflow-hidden">
+    <section className="relative py-28 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 overflow-hidden">
       <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-emerald-200/30 to-teal-200/20 rounded-full blur-3xl" />
       <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-gradient-to-tr from-cyan-200/20 to-emerald-200/10 rounded-full blur-3xl" />
-      <div className="container mx-auto text-center max-w-3xl mx-auto relative z-10">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 backdrop-blur border border-emerald-200/40 mb-6">
-          <span className="w-2 h-2 rounded-full bg-gradient-to-r from-emerald-400 to-teal-400" />
-          <span className="text-xs font-semibold text-emerald-700">Meet Your Doctor</span>
+      <div className="container mx-auto relative z-10">
+        <div className="text-center max-w-3xl mx-auto">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 backdrop-blur border border-emerald-200/40 mb-6">
+            <span className="w-2 h-2 rounded-full bg-gradient-to-r from-emerald-400 to-teal-400" />
+            <span className="text-xs font-semibold text-emerald-700">Meet Your Doctor</span>
+          </div>
+          <h1 className="font-serif text-6xl md:text-7xl font-black bg-gradient-to-r from-slate-900 via-emerald-800 to-slate-900 bg-clip-text text-transparent leading-tight">Dr. Pradnya Asutkar</h1>
+          <p className="mt-5 text-lg font-medium text-slate-700">Dermatologist & Aesthetic Medicine Specialist</p>
         </div>
-        <h1 className="font-serif text-5xl md:text-6xl font-bold bg-gradient-to-r from-slate-900 via-emerald-800 to-slate-900 bg-clip-text text-transparent">Dr. Pradnya Asutkar</h1>
-        <p className="mt-4 text-lg text-slate-600">Dermatologist & Aesthetic Medicine Specialist</p>
       </div>
     </section>
 
