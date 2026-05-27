@@ -4,15 +4,6 @@ import { ArrowRight, GraduationCap, Award } from "lucide-react";
 
 const Doctor = () => (
   <div>
-    <section 
-      className="relative py-32 bg-gradient-to-br from-white via-blue-50 to-blue-100"
-    >
-      <div className="container mx-auto text-center max-w-3xl mx-auto">
-        <h1 className="font-serif text-5xl md:text-6xl font-bold text-foreground">Dr. Pradnya Asutkar</h1>
-        <p className="mt-4 text-lg text-foreground/80">Dermatologist & Aesthetic Medicine Specialist</p>
-      </div>
-    </section>
-
     <section className="bg-gradient-hero py-20">
       <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <img src={doctor} alt="Dr. Pradnya Asutkar" loading="lazy" width={800} height={1024} className="rounded-3xl shadow-soft object-cover w-full max-w-md" />
