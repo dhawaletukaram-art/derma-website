@@ -24,10 +24,20 @@ const Footer = () => (
         <div key={l.id}>
           <h4 className="font-serif text-lg mb-4">{l.name}</h4>
           <ul className="space-y-3 text-sm text-white/70">
-            <li className="flex items-start gap-2"><MapPin size={16} className="mt-0.5 shrink-0"/> {l.area}</li>
-            <li className="flex items-start gap-2"><Phone size={16} className="mt-0.5 shrink-0"/> {l.phone}</li>
+            <li className="flex items-start gap-2">
+              <MapPin size={16} className="mt-0.5 shrink-0"/>
+              <a href={l.mapLink} target="_blank" rel="noreferrer" className="hover:text-white hover:underline transition">
+                {l.area}
+              </a>
+            </li>
+            <li className="flex items-start gap-2">
+              <Phone size={16} className="mt-0.5 shrink-0"/>
+              <a href={`tel:${l.phone}`} className="hover:text-white hover:underline transition">
+                {l.phone}
+              </a>
+            </li>
             <li>
-              <a href={l.reviewLink} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:text-white">
+              <a href={l.reviewLink} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:text-white hover:underline transition">
                 <Star size={14}/> Google Reviews
               </a>
             </li>
@@ -36,7 +46,7 @@ const Footer = () => (
                 href="https://share.google/9ouaX9Y66PbcQL9Fw" 
                 target="_blank" 
                 rel="noreferrer" 
-                className="inline-flex items-center gap-1 hover:text-white"
+                className="inline-flex items-center gap-1 hover:text-white hover:underline transition"
               >
                 <ExternalLink size={14}/> Business Page
               </a>
