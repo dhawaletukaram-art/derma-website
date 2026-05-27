@@ -28,16 +28,6 @@ const Home = () => {
 
   return (
     <div>
-    {/* Banner */}
-    <section 
-      className="relative py-32 bg-gradient-to-br from-white via-blue-50 to-blue-100"
-    >
-      <div className="container mx-auto text-center max-w-3xl mx-auto">
-        <h1 className="font-serif text-5xl md:text-6xl font-bold text-foreground">Transform Your Skin, Hair & Confidence</h1>
-        <p className="mt-4 text-lg text-foreground/80">Advanced Skin, Hair & Laser Treatments by Dr. Pradnya Asutkar</p>
-      </div>
-    </section>
-
     {/* Hero */}
     <section className="bg-gradient-hero relative overflow-hidden">
       <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center py-16 lg:py-24">
