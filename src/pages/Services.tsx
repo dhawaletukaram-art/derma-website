@@ -22,11 +22,17 @@ const Services = () => {
 
   return (
     <div>
-    <section className="container mx-auto py-20">
-      <div className="text-center max-w-3xl mx-auto mb-12">
-        <h1 className="font-serif text-5xl md:text-6xl font-bold">Our Services</h1>
-        <p className="mt-4 text-lg text-muted-foreground">Comprehensive Skin, Hair & Laser Treatments</p>
-        <p className="mt-4 text-muted-foreground text-lg">Advanced Aesthetic & Dermatology Solutions Tailored for You</p>
+    <section className="relative py-24 bg-gradient-to-br from-teal-50 via-cyan-50 to-blue-50 overflow-hidden">
+      <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-teal-200/30 to-cyan-200/20 rounded-full blur-3xl" />
+      <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-gradient-to-tr from-blue-200/20 to-teal-200/10 rounded-full blur-3xl" />
+      <div className="container mx-auto text-center max-w-3xl mx-auto relative z-10">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 backdrop-blur border border-teal-200/40 mb-6">
+          <span className="w-2 h-2 rounded-full bg-gradient-to-r from-teal-400 to-cyan-400" />
+          <span className="text-xs font-semibold text-teal-700">Our Treatments</span>
+        </div>
+        <h1 className="font-serif text-5xl md:text-6xl font-bold bg-gradient-to-r from-slate-900 via-teal-800 to-slate-900 bg-clip-text text-transparent">Our Services</h1>
+        <p className="mt-4 text-lg text-slate-600">Comprehensive Skin, Hair & Laser Treatments</p>
+        <p className="mt-2 text-slate-600">Advanced Aesthetic & Dermatology Solutions Tailored for You</p>
       </div>
     </section>
 
