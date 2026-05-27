@@ -4,15 +4,6 @@ import { locations } from "@/data/clinic";
 
 const Contact = () => (
   <div>
-    <section 
-      className="relative py-32 bg-gradient-to-br from-white via-blue-50 to-blue-100"
-    >
-      <div className="container mx-auto text-center max-w-3xl mx-auto">
-        <h1 className="font-serif text-5xl md:text-6xl font-bold text-foreground">Contact Us</h1>
-        <p className="mt-4 text-lg text-foreground/80">Visit Our Premium Clinics in Nagpur</p>
-      </div>
-    </section>
-
     <section className="container mx-auto py-20">
       <div className="text-center max-w-3xl mx-auto mb-12">
         <h1 className="font-serif text-5xl md:text-6xl font-bold">Contact Us</h1>
