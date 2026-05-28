@@ -1,7 +1,7 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
-import logo from "@/assets/dermatiqua-logo.png";
+import logo from "@/assets/logofinal.jpeg";
 
 const links = [
   { to: "/", label: "Home" },

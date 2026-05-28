@@ -53,7 +53,7 @@ export type Service = {
   short: string;
   intro: string;
   image?: string;
-  icon: any;
+  icon: React.ReactNode;
   
   treatments: Treatment[];
   cta: string;

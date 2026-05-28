@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Instagram, MessageCircle, Star, ExternalLink } from "lucide-react";
 import { locations } from "@/data/clinic";
-import logo from "@/assets/dermatiqua-logo.png";
+import logo from "@/assets/logofinal.jpeg";
 
 const Footer = () => (
   <footer className="bg-teal-deep text-white/90 mt-20">
