@@ -316,11 +316,6 @@ export const procedureGallery: ProcedurePhoto[] = [
     image: procAcne,
   },
   {
-    title: "Laser Treatments",
-    desc: "Advanced FDA-approved lasers for permanent hair reduction, pigmentation, scars and skin rejuvenation.",
-    image: svcLaser,
-  },
-  {
     title: "Anti-Ageing Treatments",
     desc: "Skin boosters, glow therapies and rejuvenation protocols for firmer, younger-looking skin.",
     image: svcAntiAgeing,
