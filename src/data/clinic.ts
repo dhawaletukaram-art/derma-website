@@ -66,7 +66,7 @@ const serviceImages: Record<string, string> = {
   "skin": svcSkin,
   "hair": svcHair,
   "laser": svcLaser,
-  "anti-ageing": svcAntiAgeing,
+  "anti-ageing": antiAgeingTreatmentNew,
   "bridal-package": svcBridal,
 };
 
@@ -315,11 +315,6 @@ export const procedureGallery: ProcedurePhoto[] = [
     title: "Acne & Pigmentation Care",
     desc: "Personalised medical and procedural plans to clear active acne, post-acne marks and stubborn pigmentation.",
     image: procAcne,
-  },
-  {
-    title: "Anti-Ageing Treatments",
-    desc: "Advanced anti-ageing procedures to restore youthful skin, improve elasticity, reduce wrinkles, and enhance facial contours.",
-    image: antiAgeingTreatmentNew,
   },
 ];
 
