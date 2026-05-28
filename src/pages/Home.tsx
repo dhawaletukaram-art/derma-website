@@ -177,7 +177,7 @@ const Home = () => {
             A look at the advanced treatments we perform — so you know exactly what to expect on your visit.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {procedureGallery.map(p => (
             <article key={p.title} className="group bg-background rounded-2xl overflow-hidden border border-border shadow-card hover:shadow-soft transition">
               <div className="aspect-[4/3] overflow-hidden">

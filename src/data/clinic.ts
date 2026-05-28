@@ -315,11 +315,6 @@ export const procedureGallery: ProcedurePhoto[] = [
     desc: "Personalised medical and procedural plans to clear active acne, post-acne marks and stubborn pigmentation.",
     image: procAcne,
   },
-  {
-    title: "Anti-Ageing Treatments",
-    desc: "Skin boosters, glow therapies and rejuvenation protocols for firmer, younger-looking skin.",
-    image: svcAntiAgeing,
-  },
 ];
 
 export const faqs = [
