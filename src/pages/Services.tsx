@@ -40,28 +40,28 @@ const Services = () => {
 
     <section className="container mx-auto py-20 space-y-20">
       {services.map((s, i) => (
-        <div key={s.slug} className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className={`relative ${i % 2 === 1 ? "lg:order-2" : ""}`}>
-            <div className="absolute -inset-4 bg-gradient-magenta opacity-15 blur-3xl rounded-full" />
+        <div key={s.slug} className="grid lg:grid-cols-2 gap-12 items-center group">
+          <div className={`relative ${i % 2 === 1 ? "lg:order-2" : ""} transition-transform duration-700 group-hover:scale-105`}>
+            <div className="absolute -inset-4 bg-gradient-magenta opacity-15 blur-3xl rounded-full group-hover:opacity-25 transition-opacity duration-700" />
             <img
               src={s.image}
               alt={s.title}
               loading="lazy"
-              className="relative rounded-3xl shadow-soft object-cover w-full aspect-[4/3]"
+              className="relative rounded-3xl shadow-soft object-cover w-full aspect-[4/3] group-hover:shadow-lg transition-all duration-700"
             />
           </div>
-          <div>
+          <div className="transition-all duration-700 group-hover:translate-x-2">
             <span className="text-xs uppercase tracking-[0.25em] text-magenta font-semibold">Service</span>
-            <h2 className="font-serif text-4xl mt-2 mb-4">{s.title}</h2>
+            <h2 className="font-serif text-4xl mt-2 mb-4 group-hover:text-primary transition-colors duration-500">{s.title}</h2>
             <p className="text-muted-foreground mb-6 leading-relaxed">{s.short}</p>
             <div className="grid sm:grid-cols-2 gap-2 mb-7">
-              {s.treatments.slice(0, 6).map(t => (
-                <div key={t.name} className="flex items-center gap-2 text-sm text-foreground/80">
-                  <CheckCircle2 size={14} className="text-primary shrink-0" /> {t.name}
+              {s.treatments.slice(0, 6).map((t, idx) => (
+                <div key={t.name} className="flex items-center gap-2 text-sm text-foreground/80 opacity-0 animate-fade-up" style={{ animationDelay: `${idx * 50}ms` }}>
+                  <CheckCircle2 size={14} className="text-primary shrink-0 group-hover:scale-125 transition-transform duration-500" /> {t.name}
                 </div>
               ))}
             </div>
-            <Link to={`/services/${s.slug}`} className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-full hover:opacity-90 transition">
+            <Link to={`/services/${s.slug}`} className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-full hover:opacity-90 hover:gap-3 transition-all duration-500 group-hover:shadow-lg">
               {s.cta} <ArrowRight size={16} />
             </Link>
           </div>
