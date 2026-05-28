@@ -1,15 +1,17 @@
 import { Link } from "react-router-dom";
 import doctor from "@/assets/doctor.jpg";
-import reception from "@/assets/clinic/reception.jpg";
 import consultationRoom from "@/assets/consultation-room-new.jpg";
 import treatmentRoom from "@/assets/treatment-room-new.jpg";
 import waitingRoom from "@/assets/waiting-room-new.jpg";
 import laserEquipment from "@/assets/clinic/laser-equipment.jpg";
 import procedureRoom from "@/assets/clinic/procedure-room.jpg";
 import skinAnalysis from "@/assets/clinic/skin-analysis.jpg";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, X } from "lucide-react";
+import { useState } from "react";
 
-const About = () => (
+const About = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  return (
   <div>
     <section className="relative py-28 bg-gradient-to-br from-rose-50 via-pink-50 to-purple-50 overflow-hidden">
       <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-rose-200/30 to-pink-200/20 rounded-full blur-3xl" />
@@ -83,11 +85,6 @@ const About = () => (
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {[
           {
-            title: "Reception & Waiting Area",
-            desc: "Comfortable and welcoming space for our patients",
-            image: reception,
-          },
-          {
             title: "Consultation Room",
             desc: "Private consultation spaces with Dr. Pradnya Asutkar",
             image: consultationRoom,
@@ -112,11 +109,16 @@ const About = () => (
             desc: "Sterile environment for all procedures",
             image: procedureRoom,
           },
+          {
+            title: "Skin Analysis Station",
+            desc: "Advanced diagnostic equipment for accurate assessment",
+            image: skinAnalysis,
+          },
         ].map((facility) => (
           <div
             key={facility.title}
             className="group relative overflow-hidden rounded-2xl shadow-card cursor-pointer transition-transform hover:scale-[1.02]"
-            onClick={() => window.open(facility.image, '_blank')}
+            onClick={() => setSelectedImage(facility.image)}
           >
             <img
               src={facility.image}
@@ -147,7 +149,33 @@ const About = () => (
         </Link>
       </div>
     </section>
+
+    {/* Image Modal */}
+    {selectedImage && (
+      <div 
+        className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
+        onClick={() => setSelectedImage(null)}
+      >
+        <div 
+          className="relative max-w-4xl w-full"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <img 
+            src={selectedImage} 
+            alt="Full size" 
+            className="w-full rounded-lg"
+          />
+          <button
+            onClick={() => setSelectedImage(null)}
+            className="absolute top-4 right-4 bg-white rounded-full p-2 hover:bg-gray-200 transition"
+          >
+            <X size={24} className="text-black" />
+          </button>
+        </div>
+      </div>
+    )}
   </div>
-);
+  );
+};
 
 export default About;
