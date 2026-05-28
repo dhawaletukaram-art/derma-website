@@ -66,28 +66,6 @@ const Services = () => {
       </div>
     </section>
 
-    {/* Consultation Timings */}
-    <section className="bg-gradient-to-br from-orange-50 via-amber-50 to-orange-50 py-12">
-      <div className="container mx-auto">
-        <div className="max-w-2xl mx-auto bg-white rounded-3xl p-8 md:p-12 shadow-lg border border-amber-100">
-          <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="flex-shrink-0">
-              <div className="relative w-24 h-24 md:w-32 md:h-32">
-                <Clock className="w-full h-full text-amber-700" strokeWidth={1.5} />
-              </div>
-            </div>
-            <div className="flex-1 text-center md:text-left">
-              <p className="text-sm md:text-base text-slate-600 font-medium mb-2">Consultation Timings</p>
-              <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">Monday to Saturday</h3>
-              <div className="inline-block md:inline-block bg-gradient-to-r from-amber-600 to-orange-600 text-white px-6 md:px-8 py-3 rounded-full font-bold text-lg md:text-xl">
-                10:00 AM to 5:00 PM
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section className="container mx-auto py-20 space-y-20">
       {services.map((s, i) => (
         <div key={s.slug} className="grid lg:grid-cols-2 gap-12 items-center group">
@@ -157,6 +135,28 @@ const Services = () => {
         <CarouselPrevious className="hidden md:flex" />
         <CarouselNext className="hidden md:flex" data-carousel-next />
       </Carousel>
+    </section>
+
+    {/* Consultation Timings - Below Testimonials */}
+    <section className="bg-gradient-to-br from-orange-50 via-amber-50 to-orange-50 py-12">
+      <div className="container mx-auto">
+        <div className="max-w-2xl mx-auto bg-white rounded-3xl p-8 md:p-12 shadow-lg border border-amber-100">
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="flex-shrink-0">
+              <div className="relative w-24 h-24 md:w-32 md:h-32">
+                <Clock className="w-full h-full text-amber-700" strokeWidth={1.5} />
+              </div>
+            </div>
+            <div className="flex-1 text-center md:text-left">
+              <p className="text-sm md:text-base text-slate-600 font-medium mb-2">Consultation Timings</p>
+              <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">Monday to Saturday</h3>
+              <div className="inline-block md:inline-block bg-gradient-to-r from-amber-600 to-orange-600 text-white px-6 md:px-8 py-3 rounded-full font-bold text-lg md:text-xl">
+                10:00 AM to 5:00 PM
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
   );
