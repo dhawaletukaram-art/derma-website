@@ -1,6 +1,7 @@
 import { Sparkles, Scissors, Zap, Flower2, Activity, Droplet, ShieldCheck, Stethoscope, HeartPulse, Crown } from "lucide-react";
 import svcLaser from "@/assets/laser-treatments.jpg";
 import svcAntiAgeing from "@/assets/anti-ageing-treatments.jpg";
+import antiAgeingTreatmentNew from "@/assets/antiageing-treatment-new.jpg";
 import svcBridal from "@/assets/bridaltreatment.jpg";
 import svcHair from "@/assets/svc-hair.png";
 import svcSkin from "@/assets/skin-treatments.jpg";
@@ -314,6 +315,11 @@ export const procedureGallery: ProcedurePhoto[] = [
     title: "Acne & Pigmentation Care",
     desc: "Personalised medical and procedural plans to clear active acne, post-acne marks and stubborn pigmentation.",
     image: procAcne,
+  },
+  {
+    title: "Anti-Ageing Treatments",
+    desc: "Skin boosters, glow therapies and rejuvenation protocols for firmer, younger-looking skin.",
+    image: antiAgeingTreatmentNew,
   },
 ];
 
