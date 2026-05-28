@@ -11,6 +11,8 @@
 8. ✅ **Code Structure Prepared** - Gallery page before/after layout ready
 9. ✅ **Code Structure Prepared** - Enhanced testimonials with ratings and clinic names
 10. ✅ **Light Gradient Banner Sections** - Added to ALL pages (Home, About, Services, Contact, Gallery, Doctor, ServiceDetail)
+11. ✅ **Anti-Ageing Treatments Service** - Updated to use new professional image (antiageing-treatment-new.jpg)
+12. ✅ **Procedure Gallery Layout** - Updated to 2x2 grid (2 rows, 2 columns)
 
 ---
 
