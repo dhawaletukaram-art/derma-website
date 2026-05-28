@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import doctor from "@/assets/doctor.jpg";
 import reception from "@/assets/clinic/reception.jpg";
-import consultationRoom from "@/assets/clinic/consultation-room.jpg";
-import treatmentRoom from "@/assets/clinic/treatment-room.jpg";
+import consultationRoom from "@/assets/consultation-room-new.jpg";
+import treatmentRoom from "@/assets/treatment-room-new.jpg";
+import waitingRoom from "@/assets/waiting-room-new.jpg";
 import laserEquipment from "@/assets/clinic/laser-equipment.jpg";
 import procedureRoom from "@/assets/clinic/procedure-room.jpg";
 import skinAnalysis from "@/assets/clinic/skin-analysis.jpg";
@@ -97,6 +98,11 @@ const About = () => (
             image: treatmentRoom,
           },
           {
+            title: "Waiting Room",
+            desc: "Comfortable seating area for patient comfort",
+            image: waitingRoom,
+          },
+          {
             title: "Laser Equipment",
             desc: "FDA-approved advanced laser technology",
             image: laserEquipment,
@@ -105,11 +111,6 @@ const About = () => (
             title: "Procedure Room",
             desc: "Sterile environment for all procedures",
             image: procedureRoom,
-          },
-          {
-            title: "Skin Analysis Station",
-            desc: "Advanced diagnostic equipment for accurate assessment",
-            image: skinAnalysis,
           },
         ].map((facility) => (
           <div
