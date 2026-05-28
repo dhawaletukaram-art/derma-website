@@ -1,13 +1,14 @@
 import { Sparkles, Scissors, Zap, Flower2, Activity, Droplet, ShieldCheck, Stethoscope, HeartPulse, Crown } from "lucide-react";
-import svcLaser from "@/assets/svc-laser.png";
-import svcAntiAgeing from "@/assets/antiageing.jpg";
+import svcLaser from "@/assets/laser-treatments.jpg";
+import svcAntiAgeing from "@/assets/anti-ageing-treatments.jpg";
 import svcBridal from "@/assets/bridaltreatment.jpg";
 import svcHair from "@/assets/svc-hair.png";
+import svcSkin from "@/assets/skin-treatments.jpg";
 import procPrp from "@/assets/proc-prp.png";
 import procBotox from "@/assets/proc-botox.png";
 import procDermapen from "@/assets/microneedling.jpg";
 import procAcne from "@/assets/proc-acne.png";
-import clinicalDerm from "@/assets/clinicaldermatology.jpg";
+import clinicalDerm from "@/assets/clinical-dermatology-treatment.jpg";
 
 export const tagline = "Science Meets Aesthetic Beauty";
 export const googleBusinessLink = "https://share.google/9ouaX9Y66PbcQL9Fw";
@@ -61,7 +62,7 @@ export type Service = {
 
 const serviceImages: Record<string, string> = {
   "clinical-dermatology": clinicalDerm,
-  "skin": "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=1200&q=80",
+  "skin": svcSkin,
   "hair": svcHair,
   "laser": svcLaser,
   "anti-ageing": svcAntiAgeing,
