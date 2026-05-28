@@ -318,7 +318,7 @@ export const procedureGallery: ProcedurePhoto[] = [
   },
   {
     title: "Anti-Ageing Treatments",
-    desc: "Skin boosters, glow therapies and rejuvenation protocols for firmer, younger-looking skin.",
+    desc: "Advanced anti-ageing procedures to restore youthful skin, improve elasticity, reduce wrinkles, and enhance facial contours.",
     image: antiAgeingTreatmentNew,
   },
 ];
