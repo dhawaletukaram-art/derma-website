@@ -34,28 +34,41 @@ const Home = () => {
     {/* Hero */}
     <section className="bg-gradient-hero relative overflow-hidden">
       <div className="container mx-auto py-12 lg:py-16">
-        <div className="animate-fade-up max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/70 backdrop-blur border border-primary/10 text-xs font-medium text-primary mb-6">
-            <span className="w-1.5 h-1.5 rounded-full bg-magenta" />
-            Skin · Hair · Laser Clinic in Nagpur
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="animate-fade-up">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/70 backdrop-blur border border-primary/10 text-xs font-medium text-primary mb-6">
+              <span className="w-1.5 h-1.5 rounded-full bg-magenta" />
+              Skin · Hair · Laser Clinic in Nagpur
+            </div>
+            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] text-foreground">
+              Transform Your <span className="text-gradient-primary">Skin, Hair</span> & Confidence
+            </h1>
+            <p className="mt-4 font-serif italic text-xl text-magenta">Science Meets Aesthetic Beauty</p>
+            <p className="mt-4 text-lg text-muted-foreground max-w-xl leading-relaxed">
+              Advanced Skin, Hair & Laser Treatments by Dr.&nbsp;Pradnya Asutkar — personalized care using modern technology and medically proven&nbsp;procedures.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link to="/appointment" className="inline-flex items-center gap-2 px-7 py-3.5 bg-gradient-primary text-primary-foreground font-semibold rounded-full hover:opacity-90 transition shadow-soft">
+                Book Appointment <ArrowRight size={18} />
+              </Link>
+              <a href="tel:8459323304" className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-foreground font-semibold rounded-full border border-border hover:border-primary transition">
+                <Phone size={16} /> Call Now
+              </a>
+              <a href="https://wa.me/918459323304" className="inline-flex items-center gap-2 px-7 py-3.5 bg-magenta/10 text-magenta font-semibold rounded-full hover:bg-magenta hover:text-white transition border border-magenta/20">
+                <MessageCircle size={16} /> WhatsApp
+              </a>
+            </div>
           </div>
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] text-foreground">
-            Transform Your <span className="text-gradient-primary">Skin, Hair</span> & Confidence
-          </h1>
-          <p className="mt-4 font-serif italic text-xl text-magenta">Science Meets Aesthetic Beauty</p>
-          <p className="mt-4 text-lg text-muted-foreground max-w-xl leading-relaxed">
-            Advanced Skin, Hair & Laser Treatments by Dr.&nbsp;Pradnya Asutkar — personalized care using modern technology and medically proven&nbsp;procedures.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link to="/appointment" className="inline-flex items-center gap-2 px-7 py-3.5 bg-gradient-primary text-primary-foreground font-semibold rounded-full hover:opacity-90 transition shadow-soft">
-              Book Appointment <ArrowRight size={18} />
-            </Link>
-            <a href="tel:8459323304" className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-foreground font-semibold rounded-full border border-border hover:border-primary transition">
-              <Phone size={16} /> Call Now
-            </a>
-            <a href="https://wa.me/918459323304" className="inline-flex items-center gap-2 px-7 py-3.5 bg-magenta/10 text-magenta font-semibold rounded-full hover:bg-magenta hover:text-white transition border border-magenta/20">
-              <MessageCircle size={16} /> WhatsApp
-            </a>
+
+          <div className="relative animate-fade-in hidden lg:block">
+            <div className="absolute -inset-4 bg-gradient-magenta opacity-15 blur-3xl rounded-full" />
+            <img 
+              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=600&fit=crop" 
+              alt="Professional skincare treatment" 
+              width={600} 
+              height={600} 
+              className="relative rounded-3xl shadow-soft object-cover w-full aspect-square hover:scale-[1.02] transition-transform duration-700"
+            />
           </div>
         </div>
       </div>
