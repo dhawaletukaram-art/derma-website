@@ -36,7 +36,7 @@ const Home = () => {
     <section className="bg-gradient-hero relative overflow-hidden" style={{ backgroundImage: `url(${bannerHome})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="absolute inset-0 bg-black/40" />
       <div className="container mx-auto py-12 lg:py-16 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-1 gap-12 items-center">
           <div className="animate-fade-up">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/70 backdrop-blur border border-primary/10 text-xs font-medium text-primary mb-6">
               <span className="w-1.5 h-1.5 rounded-full bg-magenta" />
@@ -60,17 +60,6 @@ const Home = () => {
                 <MessageCircle size={16} /> WhatsApp
               </a>
             </div>
-          </div>
-
-          <div className="relative animate-fade-in hidden lg:block">
-            <div className="absolute -inset-4 bg-gradient-magenta opacity-15 blur-3xl rounded-full" />
-            <img 
-              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=600&fit=crop" 
-              alt="Professional skincare treatment" 
-              width={600} 
-              height={600} 
-              className="relative rounded-3xl shadow-soft object-cover w-full aspect-square hover:scale-[1.02] transition-transform duration-700"
-            />
           </div>
         </div>
       </div>
