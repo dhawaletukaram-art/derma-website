@@ -284,6 +284,37 @@ const Home = () => {
       </div>
     </section>
 
+    {/* Inside The Clinic - Procedure gallery */}
+    <section className="bg-muted/40 py-20">
+      <div className="container mx-auto">
+        <div className="text-center max-w-2xl mx-auto mb-14">
+          <span className="text-xs uppercase tracking-[0.25em] text-magenta font-semibold">Inside The Clinic</span>
+          <h2 className="font-serif text-4xl md:text-5xl mt-3">See Our Procedures In Action</h2>
+          <p className="text-muted-foreground mt-4">
+            A look at the advanced treatments we perform — so you know exactly what to expect on your visit.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {procedureGallery.map(p => (
+            <article key={p.title} className="group bg-background rounded-2xl overflow-hidden border border-border shadow-card hover:shadow-soft transition">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src={p.image}
+                  alt={`${p.title} procedure at Dermatiqua clinic`}
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="font-serif text-2xl font-bold mb-2">{p.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
     {/* Why Choose Us */}
     <section className="container mx-auto py-20">
       <div className="text-center max-w-2xl mx-auto mb-14">
