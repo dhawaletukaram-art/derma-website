@@ -34,7 +34,7 @@ const Home = () => {
     <div>
     {/* Hero */}
     <section className="bg-gradient-hero relative overflow-hidden" style={{ backgroundImage: `url(${bannerHome})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/50 to-black/40" />
       <div className="container mx-auto py-12 lg:py-16 relative z-10">
         <div className="grid lg:grid-cols-1 gap-12 items-center">
           <div className="animate-fade-up">
