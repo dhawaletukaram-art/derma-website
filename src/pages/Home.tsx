@@ -29,7 +29,7 @@ const Home = () => {
     <div>
     {/* Hero */}
     <section className="bg-gradient-hero relative overflow-hidden">
-      <div className="container mx-auto py-16 lg:py-24">
+      <div className="container mx-auto py-12 lg:py-16">
         <div className="animate-fade-up max-w-3xl">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/70 backdrop-blur border border-primary/10 text-xs font-medium text-primary mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-magenta" />
@@ -59,7 +59,7 @@ const Home = () => {
 
     {/* Trust strip */}
     <section className="border-y border-border bg-muted/40">
-      <div className="container mx-auto py-10 grid md:grid-cols-4 gap-6 text-center">
+      <div className="container mx-auto py-8 grid md:grid-cols-4 gap-6 text-center">
         {[
           { k: "MBBS, MD", v: "Skin & VD" },
           { k: "Fellowship", v: "Lasers" },
@@ -75,7 +75,7 @@ const Home = () => {
     </section>
 
     {/* Meet the Doctor — credibility */}
-    <section className="container mx-auto py-20">
+    <section className="container mx-auto py-16">
       <div className="grid lg:grid-cols-5 gap-12 items-center">
         <div className="lg:col-span-2 relative">
           <div className="absolute -inset-4 bg-gradient-magenta opacity-20 blur-3xl rounded-full" />
