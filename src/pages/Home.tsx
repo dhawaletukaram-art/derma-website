@@ -61,23 +61,6 @@ const Home = () => {
       </div>
     </section>
 
-    {/* Trust strip */}
-    <section className="border-y border-border bg-muted/40">
-      <div className="container mx-auto py-8 grid md:grid-cols-4 gap-6 text-center">
-        {[
-          { k: "MBBS, MD", v: "Skin & VD" },
-          { k: "Fellowship", v: "Lasers" },
-          { k: "Fellowship", v: "Cosmetology & Aesthetic Medicine" },
-          { k: "Trusted by", v: "1000+ Patients in Nagpur" },
-        ].map(c => (
-          <div key={c.v}>
-            <div className="font-serif text-2xl text-primary">{c.k}</div>
-            <div className="text-sm text-muted-foreground">{c.v}</div>
-          </div>
-        ))}
-      </div>
-    </section>
-
     {/* Meet the Doctor — credibility */}
     <section className="container mx-auto py-16">
       <div className="grid lg:grid-cols-5 gap-12 items-center">
