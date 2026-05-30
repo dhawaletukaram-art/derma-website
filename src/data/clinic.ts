@@ -297,11 +297,6 @@ export type ProcedurePhoto = { title: string; desc: string; image: string };
 
 export const procedureGallery: ProcedurePhoto[] = [
   {
-    title: "PRP & GFC Hair Therapy",
-    desc: "Patient's own growth factors injected into the scalp to stimulate follicles, reduce hair fall and boost density.",
-    image: procPrp,
-  },
-  {
     title: "Botox & Fillers",
     desc: "Precision injections to smooth fine lines, restore volume and contour the face with natural-looking results.",
     image: procBotox,
@@ -310,11 +305,6 @@ export const procedureGallery: ProcedurePhoto[] = [
     title: "Microneedling / Derma Pen",
     desc: "Controlled micro-injuries trigger collagen remodeling — proven for acne scars, large pores and skin texture.",
     image: procDermapen,
-  },
-  {
-    title: "Acne & Pigmentation Care",
-    desc: "Personalised medical and procedural plans to clear active acne, post-acne marks and stubborn pigmentation.",
-    image: procAcne,
   },
 ];
 
