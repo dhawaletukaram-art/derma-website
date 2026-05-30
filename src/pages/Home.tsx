@@ -8,6 +8,10 @@ import { MapPin, ExternalLink } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { useEffect, useRef } from "react";
+import acneTreatmentResults from "@/assets/acne-treatment-results.jpg";
+import pigmentationCorrection from "@/assets/pigmentation-correction.jpg";
+import hairRegrowthResults from "@/assets/hair-regrowth-results.jpg";
+import skinRejuvenationResults from "@/assets/skin-rejuvenation-results.jpg";
 
 const Home = () => {
   const carouselRef = useRef(null);
@@ -162,12 +166,65 @@ const Home = () => {
           </Link>
         </div>
         <div className="grid grid-cols-2 gap-4">
-          {["Acne Treatment Results","Pigmentation Correction","Hair Regrowth","Skin Rejuvenation"].map((c,i) => (
-            <div key={c} className={`rounded-2xl p-6 shadow-card hover:shadow-soft transition ${i%2===0 ? "bg-gradient-to-br from-teal-50 to-cyan-50 border border-teal-100" : "bg-gradient-to-br from-rose-50 to-pink-50 border border-rose-100"}`}>
-              <div className="font-serif text-lg font-black text-foreground leading-snug">{c}</div>
-              <div className="text-xs text-muted-foreground mt-1 font-medium">Real patient transformations</div>
+          <div className="group rounded-2xl overflow-hidden shadow-card hover:shadow-soft transition bg-gradient-to-br from-teal-50 to-cyan-50 border border-teal-100">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img
+                src={acneTreatmentResults}
+                alt="Acne Treatment Results"
+                loading="lazy"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
             </div>
-          ))}
+            <div className="p-4">
+              <h3 className="font-serif text-lg font-bold text-slate-900">Acne Treatment Results</h3>
+              <p className="text-xs text-muted-foreground mt-1">Real patient transformations</p>
+            </div>
+          </div>
+
+          <div className="group rounded-2xl overflow-hidden shadow-card hover:shadow-soft transition bg-gradient-to-br from-rose-50 to-pink-50 border border-rose-100">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img
+                src={pigmentationCorrection}
+                alt="Pigmentation Correction"
+                loading="lazy"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-serif text-lg font-bold text-slate-900">Pigmentation Correction</h3>
+              <p className="text-xs text-muted-foreground mt-1">Real patient transformations</p>
+            </div>
+          </div>
+
+          <div className="group rounded-2xl overflow-hidden shadow-card hover:shadow-soft transition bg-gradient-to-br from-teal-50 to-cyan-50 border border-teal-100">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img
+                src={hairRegrowthResults}
+                alt="Hair Regrowth"
+                loading="lazy"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-serif text-lg font-bold text-slate-900">Hair Regrowth</h3>
+              <p className="text-xs text-muted-foreground mt-1">Real patient transformations</p>
+            </div>
+          </div>
+
+          <div className="group rounded-2xl overflow-hidden shadow-card hover:shadow-soft transition bg-gradient-to-br from-rose-50 to-pink-50 border border-rose-100">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img
+                src={skinRejuvenationResults}
+                alt="Skin Rejuvenation"
+                loading="lazy"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-serif text-lg font-bold text-slate-900">Skin Rejuvenation</h3>
+              <p className="text-xs text-muted-foreground mt-1">Real patient transformations</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
