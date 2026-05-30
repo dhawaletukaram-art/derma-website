@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Phone, MessageCircle, CheckCircle2, Star } from "lucide-react";
-import hero from "@/assets/heroimage.jpg";
+import { ArrowRight, Phone, MessageCircle, Star } from "lucide-react";
 import { services, whyChoose, processSteps, testimonials, faqs, locations, procedureGallery } from "@/data/clinic";
 import doctorImg from "@/assets/doctor.jpg";
 import { Award, GraduationCap } from "lucide-react";
@@ -30,8 +29,8 @@ const Home = () => {
     <div>
     {/* Hero */}
     <section className="bg-gradient-hero relative overflow-hidden">
-      <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center py-16 lg:py-24">
-        <div className="animate-fade-up">
+      <div className="container mx-auto py-16 lg:py-24">
+        <div className="animate-fade-up max-w-3xl">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/70 backdrop-blur border border-primary/10 text-xs font-medium text-primary mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-magenta" />
             Skin · Hair · Laser Clinic in Nagpur
@@ -54,17 +53,6 @@ const Home = () => {
               <MessageCircle size={16} /> WhatsApp
             </a>
           </div>
-          <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 gap-3 max-w-xl">
-            {["Advanced Laser Tech","Personalized Solutions","Expert Dermatology","Modern Treatments","Hygienic & Safe"].map(f => (
-              <div key={f} className="flex items-center gap-2 text-sm text-foreground/80">
-                <CheckCircle2 size={16} className="text-primary shrink-0" /> {f}
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="relative animate-fade-in">
-          <div className="absolute -inset-4 bg-gradient-magenta opacity-20 blur-3xl rounded-full animate-float" />
-          <img src={hero} alt="Modern dermatology clinic" width={1280} height={1280} className="relative rounded-3xl shadow-soft object-cover w-full aspect-square hover:scale-[1.02] transition-transform duration-700" />
         </div>
       </div>
     </section>
