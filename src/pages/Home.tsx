@@ -43,9 +43,9 @@ const Home = () => {
               Skin · Hair · Laser Clinic in Nagpur
             </div>
             <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] text-white">
-              Transform Your <span className="text-gradient-primary">Skin, Hair</span> & Confidence
+              Transform Your <span className="text-yellow-300">Skin, Hair</span> & Confidence
             </h1>
-            <p className="mt-4 font-serif italic text-xl text-magenta">Science Meets Aesthetic Beauty</p>
+            <p className="mt-4 font-serif italic text-xl text-yellow-200">Science Meets Aesthetic Beauty</p>
             <p className="mt-4 text-lg text-white/90 max-w-xl leading-relaxed">
               Advanced Skin, Hair & Laser Treatments by Dr.&nbsp;Pradnya Asutkar — personalized care using modern technology and medically proven&nbsp;procedures.
             </p>
