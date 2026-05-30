@@ -4,7 +4,7 @@ import svcAntiAgeing from "@/assets/anti-ageing-treatments.jpg";
 import antiAgeingTreatmentNew from "@/assets/antiageing-treatment-new.jpg";
 import svcBridal from "@/assets/bridaltreatment.jpg";
 import svcHair from "@/assets/svc-hair.png";
-import svcSkin from "@/assets/skin-treatments.jpg";
+import svcSkin from "@/assets/skin-treatments-new.jpg";
 import procPrp from "@/assets/proc-prp.png";
 import procBotox from "@/assets/proc-botox.png";
 import procDermapen from "@/assets/microneedling.jpg";

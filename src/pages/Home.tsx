@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Phone, MessageCircle, Star } from "lucide-react";
 import { services, whyChoose, processSteps, testimonials, faqs, locations, procedureGallery } from "@/data/clinic";
 import doctorImg from "@/assets/doctor.jpg";
+import bannerHome from "@/assets/banner-home.png";
 import { Award, GraduationCap } from "lucide-react";
 import { PlayCircle } from "lucide-react";
 import { MapPin, ExternalLink } from "lucide-react";
@@ -32,19 +33,20 @@ const Home = () => {
   return (
     <div>
     {/* Hero */}
-    <section className="bg-gradient-hero relative overflow-hidden">
-      <div className="container mx-auto py-12 lg:py-16">
+    <section className="bg-gradient-hero relative overflow-hidden" style={{ backgroundImage: `url(${bannerHome})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className="absolute inset-0 bg-black/40" />
+      <div className="container mx-auto py-12 lg:py-16 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-up">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/70 backdrop-blur border border-primary/10 text-xs font-medium text-primary mb-6">
               <span className="w-1.5 h-1.5 rounded-full bg-magenta" />
               Skin · Hair · Laser Clinic in Nagpur
             </div>
-            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] text-foreground">
+            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] text-white">
               Transform Your <span className="text-gradient-primary">Skin, Hair</span> & Confidence
             </h1>
             <p className="mt-4 font-serif italic text-xl text-magenta">Science Meets Aesthetic Beauty</p>
-            <p className="mt-4 text-lg text-muted-foreground max-w-xl leading-relaxed">
+            <p className="mt-4 text-lg text-white/90 max-w-xl leading-relaxed">
               Advanced Skin, Hair & Laser Treatments by Dr.&nbsp;Pradnya Asutkar — personalized care using modern technology and medically proven&nbsp;procedures.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
