@@ -134,7 +134,7 @@ const Home = () => {
     </section>
 
     {/* About preview */}
-    <section className="container mx-auto pb-20">
+    <section className="container mx-auto py-20">
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <span className="text-xs uppercase tracking-[0.25em] text-magenta font-semibold">About</span>
