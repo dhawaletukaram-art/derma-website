@@ -67,57 +67,6 @@ const Home = () => {
       </div>
     </section>
 
-    {/* Meet the Doctor — credibility */}
-    <section className="container mx-auto py-16">
-      <div className="grid lg:grid-cols-5 gap-12 items-center">
-        <div className="lg:col-span-2 relative">
-          <div className="absolute -inset-4 bg-gradient-magenta opacity-20 blur-3xl rounded-full" />
-          <img
-            src={doctorImg}
-            alt="Dr. Pradnya Asutkar — Dermatologist & Aesthetic Medicine Specialist"
-            width={900}
-            height={1200}
-            className="relative rounded-3xl shadow-soft object-cover w-full aspect-[3/4]"
-          />
-          <div className="absolute -bottom-5 -right-5 bg-background border border-border shadow-card rounded-2xl px-5 py-4 hidden md:flex items-center gap-3">
-            <Award size={22} className="text-magenta" />
-            <div>
-              <div className="font-serif text-lg leading-none">10+ Years</div>
-              <div className="text-xs text-muted-foreground">Clinical Experience</div>
-            </div>
-          </div>
-        </div>
-        <div className="lg:col-span-3">
-          <span className="text-xs uppercase tracking-[0.25em] text-magenta font-semibold">Meet Your Dermatologist</span>
-          <h2 className="font-serif text-4xl md:text-5xl mt-3 mb-5">Dr. Pradnya Asutkar</h2>
-          <p className="text-primary font-medium mb-5">Dermatologist · Cosmetologist · Laser & Aesthetic Specialist</p>
-          <p className="text-muted-foreground leading-relaxed mb-4">
-            Dr. Pradnya Asutkar is a qualified dermatologist with a decade of experience in clinical dermatology, advanced laser procedures and aesthetic medicine. She has successfully treated thousands of patients across Nagpur for chronic skin conditions including psoriasis, vitiligo, fungal infections, eczema and severe acne — alongside hair restoration and modern cosmetic dermatology.
-          </p>
-          <p className="text-muted-foreground leading-relaxed mb-6">
-            Her practice combines evidence-based medical dermatology with the latest FDA-approved laser and aesthetic technologies. Every treatment plan is personalised after a detailed skin analysis, with a focus on safety, ethics, transparent pricing and long-term, natural-looking results.
-          </p>
-          <div className="grid sm:grid-cols-2 gap-3 mb-7">
-            {[
-              "MBBS, MD (Skin & VD)",
-              "Fellowship in Lasers",
-              "Fellowship in Cosmetology",
-              "Member — IADVL & ACSI",
-            ].map(q => (
-              <div key={q} className="flex items-center gap-2 text-sm text-foreground/80">
-                <GraduationCap size={16} className="text-primary shrink-0" /> {q}
-              </div>
-            ))}
-          </div>
-          <div className="flex flex-wrap gap-3">
-            <Link to="/doctor" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-primary text-primary-foreground font-semibold rounded-full shadow-soft hover:opacity-90 transition">
-              Full Profile <ArrowRight size={16} />
-            </Link>
-          </div>
-        </div>
-      </div>
-    </section>
-
     {/* Credentials Strip */}
     <section className="border-y border-border bg-muted/40">
       <div className="container mx-auto py-10 grid md:grid-cols-4 gap-6 text-center">
