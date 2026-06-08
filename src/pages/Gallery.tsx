@@ -4,6 +4,10 @@ import hairRegrowth from "@/assets/gallery/hair-regrowth.jpg";
 import laserHair from "@/assets/gallery/laser-hair.jpg";
 import pigmentation from "@/assets/gallery/pigmentation.jpg";
 import skinRejuvenation from "@/assets/gallery/skin-rejuvenation.jpg";
+import acneTreatmentFinal from "@/assets/acne-treatment-final.jpg";
+import pigmentationFinal from "@/assets/pigmentation-correction-final.jpg";
+import antiAgeingFinal from "@/assets/antiageing-treatment-final.jpg";
+import skinRejuvenationFinal from "@/assets/skin-rejuvenation-final.jpg";
 
 type GalleryItem = {
   title: string;
@@ -21,10 +25,22 @@ const galleryItems: GalleryItem[] = [
     description: "Clear, smooth skin after personalized acne treatment plan",
   },
   {
+    title: "Acne Treatment - Case Study",
+    category: "Acne Care",
+    image: acneTreatmentFinal,
+    description: "Dermatology case study: Complete acne clearance in 6 months",
+  },
+  {
     title: "Pigmentation Correction",
     category: "Skin Brightening",
     image: pigmentation,
     description: "Even skin tone achieved through targeted pigmentation therapy",
+  },
+  {
+    title: "Pigmentation Correction - Final Results",
+    category: "Skin Brightening",
+    image: pigmentationFinal,
+    description: "Dramatic pigmentation improvement with before and after comparison",
   },
   {
     title: "Hair Regrowth Transformation",
@@ -45,10 +61,22 @@ const galleryItems: GalleryItem[] = [
     description: "Youthful, rejuvenated skin with Botox & dermal fillers",
   },
   {
+    title: "Anti-Ageing Treatment - Final Results",
+    category: "Anti-Ageing",
+    image: antiAgeingFinal,
+    description: "Visible skin tightening and rejuvenation with advanced anti-ageing therapy",
+  },
+  {
     title: "Skin Rejuvenation",
     category: "Skin Glow",
     image: skinRejuvenation,
     description: "Radiant, glowing complexion after skin rejuvenation therapy",
+  },
+  {
+    title: "Skin Rejuvenation - Final Results",
+    category: "Skin Glow",
+    image: skinRejuvenationFinal,
+    description: "Complete skin transformation with enhanced glow and texture improvement",
   },
 ];
 
