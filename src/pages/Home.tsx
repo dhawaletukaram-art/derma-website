@@ -1,14 +1,20 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Phone, MessageCircle, CheckCircle2, Star } from "lucide-react";
-import hero from "@/assets/heroimage.jpg";
+import { ArrowRight, Phone, MessageCircle, Star } from "lucide-react";
 import { services, whyChoose, processSteps, testimonials, faqs, locations, procedureGallery } from "@/data/clinic";
 import doctorImg from "@/assets/doctor.jpg";
+import bannerHome from "@/assets/banner-home.png";
 import { Award, GraduationCap } from "lucide-react";
 import { PlayCircle } from "lucide-react";
 import { MapPin, ExternalLink } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { useEffect, useRef } from "react";
+import acneTreatmentResults from "@/assets/acne-treatment-results.jpg";
+import pigmentationCorrection from "@/assets/pigmentation-correction.jpg";
+import hairRegrowthResults from "@/assets/hair-regrowth-results.jpg";
+import skinRejuvenationResults from "@/assets/skin-rejuvenation-results.jpg";
+import pigmentationCorrectionGallery from "@/assets/gallery/pigmentation-correction.jpg";
+import antiAgeingTransformations from "@/assets/gallery/anti-ageing-transformations.jpg";
 
 const Home = () => {
   const carouselRef = useRef(null);
@@ -29,47 +35,84 @@ const Home = () => {
   return (
     <div>
     {/* Hero */}
-    <section className="bg-gradient-hero relative overflow-hidden">
-      <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center py-16 lg:py-24">
-        <div className="animate-fade-up">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/70 backdrop-blur border border-primary/10 text-xs font-medium text-primary mb-6">
-            <span className="w-1.5 h-1.5 rounded-full bg-magenta" />
-            Skin · Hair · Laser Clinic in Nagpur
+    <section className="bg-gradient-hero relative overflow-hidden" style={{ backgroundImage: `url(${bannerHome})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/50 to-black/40" />
+      <div className="container mx-auto py-12 lg:py-16 relative z-10">
+        <div className="grid lg:grid-cols-1 gap-12 items-center">
+          <div className="animate-fade-up">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/70 backdrop-blur border border-primary/10 text-xs font-medium text-primary mb-6">
+              <span className="w-1.5 h-1.5 rounded-full bg-magenta" />
+              Skin · Hair · Laser Clinic in Nagpur
+            </div>
+            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] text-white">
+              Transform Your <span className="text-yellow-300">Skin, Hair</span> & Confidence
+            </h1>
+            <p className="mt-4 font-serif italic text-xl text-yellow-200">Science Meets Aesthetic Beauty</p>
+            <p className="mt-4 text-lg text-white/90 max-w-xl leading-relaxed">
+              Advanced Skin, Hair & Laser Treatments by Dr.&nbsp;Pradnya Asutkar — personalized care using modern technology and medically proven&nbsp;procedures.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link to="/appointment" className="inline-flex items-center gap-2 px-7 py-3.5 bg-gradient-primary text-primary-foreground font-semibold rounded-full hover:opacity-90 transition shadow-soft">
+                Book Appointment <ArrowRight size={18} />
+              </Link>
+              <a href="tel:8459323304" className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-foreground font-semibold rounded-full border border-border hover:border-primary transition">
+                <Phone size={16} /> Call Now
+              </a>
+              <a href="https://wa.me/918459323304" className="inline-flex items-center gap-2 px-7 py-3.5 bg-magenta/10 text-magenta font-semibold rounded-full hover:bg-magenta hover:text-white transition border border-magenta/20">
+                <MessageCircle size={16} /> WhatsApp
+              </a>
+            </div>
           </div>
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] text-foreground">
-            Transform Your <span className="text-gradient-primary">Skin, Hair</span> & Confidence
-          </h1>
-          <p className="mt-4 font-serif italic text-xl text-magenta">Science Meets Aesthetic Beauty</p>
-          <p className="mt-4 text-lg text-muted-foreground max-w-xl leading-relaxed">
-            Advanced Skin, Hair & Laser Treatments by Dr.&nbsp;Pradnya Asutkar — personalized care using modern technology and medically proven&nbsp;procedures.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link to="/appointment" className="inline-flex items-center gap-2 px-7 py-3.5 bg-gradient-primary text-primary-foreground font-semibold rounded-full hover:opacity-90 transition shadow-soft">
-              Book Appointment <ArrowRight size={18} />
-            </Link>
-            <a href="tel:8459323304" className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-foreground font-semibold rounded-full border border-border hover:border-primary transition">
-              <Phone size={16} /> Call Now
-            </a>
-            <a href="https://wa.me/918459323304" className="inline-flex items-center gap-2 px-7 py-3.5 bg-magenta/10 text-magenta font-semibold rounded-full hover:bg-magenta hover:text-white transition border border-magenta/20">
-              <MessageCircle size={16} /> WhatsApp
-            </a>
-          </div>
-          <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 gap-3 max-w-xl">
-            {["Advanced Laser Tech","Personalized Solutions","Expert Dermatology","Modern Treatments","Hygienic & Safe"].map(f => (
-              <div key={f} className="flex items-center gap-2 text-sm text-foreground/80">
-                <CheckCircle2 size={16} className="text-primary shrink-0" /> {f}
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="relative animate-fade-in">
-          <div className="absolute -inset-4 bg-gradient-magenta opacity-20 blur-3xl rounded-full animate-float" />
-          <img src={hero} alt="Modern dermatology clinic" width={1280} height={1280} className="relative rounded-3xl shadow-soft object-cover w-full aspect-square hover:scale-[1.02] transition-transform duration-700" />
         </div>
       </div>
     </section>
 
-    {/* Trust strip */}
+    {/* Doctor Gallery Section */}
+    <section className="bg-gradient-to-br from-slate-50 via-white to-slate-50 py-20">
+      <div className="container mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="relative">
+            <div className="absolute -inset-4 bg-gradient-magenta opacity-15 blur-3xl rounded-full hidden lg:block" />
+            <img src={doctorImg} alt="Dr. Pradnya Asutkar" loading="lazy" width={800} height={1024} className="relative rounded-3xl shadow-soft object-cover w-full max-w-md" />
+          </div>
+          <div>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-magenta/10 border border-magenta/30 mb-6">
+              <span className="w-2 h-2 rounded-full bg-magenta" />
+              <span className="text-xs font-semibold text-magenta">Meet Your Dermatologist</span>
+            </div>
+            
+            <h2 className="font-serif text-5xl md:text-6xl font-black mb-6 leading-tight">Dr. Pradnya Asutkar</h2>
+            
+            <div className="bg-white rounded-2xl p-6 mb-6 border border-border shadow-sm">
+              <p className="text-lg font-semibold text-slate-800 leading-relaxed">Consultant Dermatologist · Cosmetologist · Aesthetic Physician · Trichologist · Dermatosurgeon · Venerologist</p>
+            </div>
+
+            <div className="bg-gradient-to-br from-magenta/10 to-primary/10 rounded-2xl p-6 mb-8 border border-magenta/20">
+              <p className="text-foreground leading-relaxed"><span className="font-semibold text-base text-slate-900">Specialized Expertise:</span> Comprehensive treatment of all dermatological conditions including medical, surgical, and aesthetic procedures. Also treats complex conditions like leprosy and sexually transmitted infections (STD/VD) with confidential, non-judgmental care.</p>
+            </div>
+
+            <div className="space-y-3 mb-8 text-muted-foreground leading-relaxed text-sm">
+              <p>Dr. Pradnya Asutkar is a qualified dermatologist with a decade of experience in clinical dermatology, advanced laser procedures and aesthetic medicine. She has successfully treated thousands of patients across Nagpur for chronic skin conditions including psoriasis, vitiligo, fungal infections, eczema and severe acne — alongside hair restoration and modern cosmetic dermatology.</p>
+              <p>Her practice combines evidence-based medical dermatology with the latest FDA-approved laser and aesthetic technologies. Every treatment plan is personalised after a detailed skin analysis, with a focus on safety, ethics, transparent pricing and long-term, natural-looking results.</p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-3 mb-8">
+              {["MBBS","MD (Skin & VD — Dermatology & Venereology)","Fellowship in Lasers","Fellowship in Cosmetology & Aesthetic Medicine","Trichology Specialist","Dermatosurgery Specialist"].map(q => (
+                <div key={q} className="flex items-start gap-3 p-3 rounded-lg bg-white border border-border/60 hover:border-magenta/30 hover:bg-magenta/5 transition">
+                  <Award size={16} className="text-magenta mt-0.5 shrink-0" /> <span className="text-sm text-foreground">{q}</span>
+                </div>
+              ))}
+            </div>
+
+            <Link to="/doctor" className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-primary text-primary-foreground font-semibold rounded-full hover:opacity-90 shadow-soft transition">
+              Full Profile <ArrowRight size={18} />
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Credentials Strip */}
     <section className="border-y border-border bg-muted/40">
       <div className="container mx-auto py-10 grid md:grid-cols-4 gap-6 text-center">
         {[
@@ -86,59 +129,8 @@ const Home = () => {
       </div>
     </section>
 
-    {/* Meet the Doctor — credibility */}
-    <section className="container mx-auto py-20">
-      <div className="grid lg:grid-cols-5 gap-12 items-center">
-        <div className="lg:col-span-2 relative">
-          <div className="absolute -inset-4 bg-gradient-magenta opacity-20 blur-3xl rounded-full" />
-          <img
-            src={doctorImg}
-            alt="Dr. Pradnya Asutkar — Dermatologist & Aesthetic Medicine Specialist"
-            width={900}
-            height={1200}
-            className="relative rounded-3xl shadow-soft object-cover w-full aspect-[3/4]"
-          />
-          <div className="absolute -bottom-5 -right-5 bg-background border border-border shadow-card rounded-2xl px-5 py-4 hidden md:flex items-center gap-3">
-            <Award size={22} className="text-magenta" />
-            <div>
-              <div className="font-serif text-lg leading-none">10+ Years</div>
-              <div className="text-xs text-muted-foreground">Clinical Experience</div>
-            </div>
-          </div>
-        </div>
-        <div className="lg:col-span-3">
-          <span className="text-xs uppercase tracking-[0.25em] text-magenta font-semibold">Meet Your Dermatologist</span>
-          <h2 className="font-serif text-4xl md:text-5xl mt-3 mb-5">Dr. Pradnya Asutkar</h2>
-          <p className="text-primary font-medium mb-5">Dermatologist · Cosmetologist · Laser & Aesthetic Specialist</p>
-          <p className="text-muted-foreground leading-relaxed mb-4">
-            Dr. Pradnya Asutkar is a qualified dermatologist with a decade of experience in clinical dermatology, advanced laser procedures and aesthetic medicine. She has successfully treated thousands of patients across Nagpur for chronic skin conditions including psoriasis, vitiligo, fungal infections, eczema and severe acne — alongside hair restoration and modern cosmetic dermatology.
-          </p>
-          <p className="text-muted-foreground leading-relaxed mb-6">
-            Her practice combines evidence-based medical dermatology with the latest FDA-approved laser and aesthetic technologies. Every treatment plan is personalised after a detailed skin analysis, with a focus on safety, ethics, transparent pricing and long-term, natural-looking results.
-          </p>
-          <div className="grid sm:grid-cols-2 gap-3 mb-7">
-            {[
-              "MBBS, MD (Skin & VD)",
-              "Fellowship in Lasers",
-              "Fellowship in Cosmetology",
-              "Member — IADVL & ACSI",
-            ].map(q => (
-              <div key={q} className="flex items-center gap-2 text-sm text-foreground/80">
-                <GraduationCap size={16} className="text-primary shrink-0" /> {q}
-              </div>
-            ))}
-          </div>
-          <div className="flex flex-wrap gap-3">
-            <Link to="/doctor" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-primary text-primary-foreground font-semibold rounded-full shadow-soft hover:opacity-90 transition">
-              Full Profile <ArrowRight size={16} />
-            </Link>
-          </div>
-        </div>
-      </div>
-    </section>
-
     {/* About preview */}
-    <section className="container mx-auto pb-20">
+    <section className="container mx-auto py-20">
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <span className="text-xs uppercase tracking-[0.25em] text-magenta font-semibold">About</span>
@@ -156,44 +148,81 @@ const Home = () => {
             Read More About Us <ArrowRight size={16} />
           </Link>
         </div>
-        <div className="grid grid-cols-2 gap-4">
-          {["Acne Treatment Results","Pigmentation Correction","Hair Regrowth","Skin Rejuvenation"].map((c,i) => (
-            <div key={c} className={`rounded-2xl p-6 shadow-card hover:shadow-soft transition ${i%2===0 ? "bg-gradient-to-br from-teal-50 to-cyan-50 border border-teal-100" : "bg-gradient-to-br from-rose-50 to-pink-50 border border-rose-100"}`}>
-              <div className="font-serif text-lg font-black text-foreground leading-snug">{c}</div>
-              <div className="text-xs text-muted-foreground mt-1 font-medium">Real patient transformations</div>
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
+          <div className="group rounded-2xl overflow-hidden shadow-card hover:shadow-soft transition bg-gradient-to-br from-teal-50 to-cyan-50 border border-teal-100">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img
+                src={acneTreatmentResults}
+                alt="Acne Treatment Results"
+                loading="lazy"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
             </div>
-          ))}
-        </div>
-      </div>
-    </section>
+            <div className="p-4">
+              <h3 className="font-serif text-lg font-bold text-slate-900">Acne Treatment Results</h3>
+              <p className="text-xs text-muted-foreground mt-1">Real patient transformations</p>
+            </div>
+          </div>
 
-    {/* Procedure gallery */}
-    <section className="bg-muted/40 py-20">
-      <div className="container mx-auto">
-        <div className="text-center max-w-2xl mx-auto mb-14">
-          <span className="text-xs uppercase tracking-[0.25em] text-magenta font-semibold">Inside The Clinic</span>
-          <h2 className="font-serif text-4xl md:text-5xl mt-3">See Our Procedures In Action</h2>
-          <p className="text-muted-foreground mt-4">
-            A look at the advanced treatments we perform — so you know exactly what to expect on your visit.
-          </p>
-        </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {procedureGallery.map(p => (
-            <article key={p.title} className="group bg-background rounded-2xl overflow-hidden border border-border shadow-card hover:shadow-soft transition">
-              <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src={p.image}
-                  alt={`${p.title} procedure at Dermatiqua clinic`}
-                  loading="lazy"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="font-serif text-2xl font-bold mb-2">{p.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
-              </div>
-            </article>
-          ))}
+          <div className="group rounded-2xl overflow-hidden shadow-card hover:shadow-soft transition bg-gradient-to-br from-rose-50 to-pink-50 border border-rose-100">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img
+                src={pigmentationCorrectionGallery}
+                alt="Pigmentation Correction"
+                loading="lazy"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-serif text-lg font-bold text-slate-900">Pigmentation Correction</h3>
+              <p className="text-xs text-muted-foreground mt-1">Even skin tone achieved</p>
+            </div>
+          </div>
+
+          <div className="group rounded-2xl overflow-hidden shadow-card hover:shadow-soft transition bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-100">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img
+                src={antiAgeingTransformations}
+                alt="Anti-Ageing Transformations"
+                loading="lazy"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-serif text-lg font-bold text-slate-900">Anti-Ageing Transformations</h3>
+              <p className="text-xs text-muted-foreground mt-1">Youthful, rejuvenated skin</p>
+            </div>
+          </div>
+
+          <div className="group rounded-2xl overflow-hidden shadow-card hover:shadow-soft transition bg-gradient-to-br from-teal-50 to-cyan-50 border border-teal-100">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img
+                src={hairRegrowthResults}
+                alt="Hair Regrowth"
+                loading="lazy"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-serif text-lg font-bold text-slate-900">Hair Regrowth</h3>
+              <p className="text-xs text-muted-foreground mt-1">Real patient transformations</p>
+            </div>
+          </div>
+
+          <div className="group rounded-2xl overflow-hidden shadow-card hover:shadow-soft transition bg-gradient-to-br from-rose-50 to-pink-50 border border-rose-100">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img
+                src={skinRejuvenationResults}
+                alt="Skin Rejuvenation"
+                loading="lazy"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-serif text-lg font-bold text-slate-900">Skin Rejuvenation</h3>
+              <p className="text-xs text-muted-foreground mt-1">Real patient transformations</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -230,6 +259,37 @@ const Home = () => {
                 </span>
               </div>
             </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* Inside The Clinic - Procedure gallery */}
+    <section className="bg-muted/40 py-20">
+      <div className="container mx-auto">
+        <div className="text-center max-w-2xl mx-auto mb-14">
+          <span className="text-xs uppercase tracking-[0.25em] text-magenta font-semibold">Inside The Clinic</span>
+          <h2 className="font-serif text-4xl md:text-5xl mt-3">See Our Procedures In Action</h2>
+          <p className="text-muted-foreground mt-4">
+            A look at the advanced treatments we perform — so you know exactly what to expect on your visit.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {procedureGallery.map(p => (
+            <article key={p.title} className="group bg-background rounded-2xl overflow-hidden border border-border shadow-card hover:shadow-soft transition">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src={p.image}
+                  alt={`${p.title} procedure at Dermatiqua clinic`}
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="font-serif text-2xl font-bold mb-2">{p.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
+              </div>
+            </article>
           ))}
         </div>
       </div>

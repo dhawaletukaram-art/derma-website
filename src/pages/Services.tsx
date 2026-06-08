@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, CheckCircle2, Star } from "lucide-react";
+import { ArrowRight, CheckCircle2, Star, Clock, Building2, Users, Shield, Zap, Award } from "lucide-react";
 import { services, testimonials, locations } from "@/data/clinic";
 import { useEffect, useRef } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
@@ -34,6 +34,34 @@ const Services = () => {
           <h1 className="font-serif text-6xl md:text-7xl font-black bg-gradient-to-r from-slate-900 via-teal-800 to-slate-900 bg-clip-text text-transparent leading-tight">Our Services</h1>
           <p className="mt-5 text-lg font-medium text-slate-700">Comprehensive Skin, Hair & Laser Treatments</p>
           <p className="mt-2 font-medium text-slate-700">Advanced Aesthetic & Dermatology Solutions Tailored for You</p>
+        </div>
+      </div>
+    </section>
+
+    {/* Features Banner */}
+    <section className="bg-gradient-to-r from-amber-50 via-orange-50 to-amber-50 py-8 border-y border-amber-200/50">
+      <div className="container mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6">
+          <div className="flex flex-col items-center text-center">
+            <Zap className="w-8 h-8 md:w-10 md:h-10 text-amber-700 mb-2" />
+            <p className="text-xs md:text-sm font-bold text-slate-900">ADVANCED<br />TECHNOLOGY</p>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <Award className="w-8 h-8 md:w-10 md:h-10 text-amber-700 mb-2" />
+            <p className="text-xs md:text-sm font-bold text-slate-900">EXPERT<br />DERMATOLOGIST</p>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <Users className="w-8 h-8 md:w-10 md:h-10 text-amber-700 mb-2" />
+            <p className="text-xs md:text-sm font-bold text-slate-900">PERSONALIZED<br />CARE</p>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <Shield className="w-8 h-8 md:w-10 md:h-10 text-amber-700 mb-2" />
+            <p className="text-xs md:text-sm font-bold text-slate-900">SAFE &<br />HYGIENIC</p>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <CheckCircle2 className="w-8 h-8 md:w-10 md:h-10 text-amber-700 mb-2" />
+            <p className="text-xs md:text-sm font-bold text-slate-900">PROVEN<br />RESULTS</p>
+          </div>
         </div>
       </div>
     </section>
@@ -107,6 +135,28 @@ const Services = () => {
         <CarouselPrevious className="hidden md:flex" />
         <CarouselNext className="hidden md:flex" data-carousel-next />
       </Carousel>
+    </section>
+
+    {/* Consultation Timings - Below Testimonials */}
+    <section className="bg-gradient-to-br from-orange-50 via-amber-50 to-orange-50 py-12">
+      <div className="container mx-auto">
+        <div className="max-w-2xl mx-auto bg-white rounded-3xl p-8 md:p-12 shadow-lg border border-amber-100">
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="flex-shrink-0">
+              <div className="relative w-24 h-24 md:w-32 md:h-32">
+                <Clock className="w-full h-full text-amber-700" strokeWidth={1.5} />
+              </div>
+            </div>
+            <div className="flex-1 text-center md:text-left">
+              <p className="text-sm md:text-base text-slate-600 font-medium mb-2">Consultation Timings</p>
+              <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">Monday to Saturday</h3>
+              <div className="inline-block md:inline-block bg-gradient-to-r from-amber-600 to-orange-600 text-white px-6 md:px-8 py-3 rounded-full font-bold text-lg md:text-xl">
+                10:00 AM to 5:00 PM
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
   );

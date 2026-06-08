@@ -1,9 +1,9 @@
-import acneTreatment from "@/assets/gallery/acne-treatment.jpg";
-import antiAgeing from "@/assets/gallery/anti-ageing.jpg";
+import acneTreatmentFinal from "@/assets/gallery/acne-treatment-final.jpg";
+import pigmentationCorrectionFinal from "@/assets/gallery/pigmentation-correction-final.jpg";
+import antiAgeingTreatmentFinal from "@/assets/gallery/anti-ageing-treatment-final.jpg";
+import skinRejuvenationFinal from "@/assets/gallery/skin-rejuvenation-final.jpg";
 import hairRegrowth from "@/assets/gallery/hair-regrowth.jpg";
 import laserHair from "@/assets/gallery/laser-hair.jpg";
-import pigmentation from "@/assets/gallery/pigmentation.jpg";
-import skinRejuvenation from "@/assets/gallery/skin-rejuvenation.jpg";
 
 type GalleryItem = {
   title: string;
@@ -17,14 +17,14 @@ const galleryItems: GalleryItem[] = [
   {
     title: "Acne Treatment Results",
     category: "Acne Care",
-    image: acneTreatment,
+    image: acneTreatmentFinal,
     description: "Clear, smooth skin after personalized acne treatment plan",
   },
   {
-    title: "Pigmentation Correction",
+    title: "Pigmentation Correction - Final Results",
     category: "Skin Brightening",
-    image: pigmentation,
-    description: "Even skin tone achieved through targeted pigmentation therapy",
+    image: pigmentationCorrectionFinal,
+    description: "Dramatic pigmentation improvement with visible results",
   },
   {
     title: "Hair Regrowth Transformation",
@@ -39,16 +39,16 @@ const galleryItems: GalleryItem[] = [
     description: "Smooth, hair-free skin after laser hair removal sessions",
   },
   {
-    title: "Anti-Ageing Transformations",
+    title: "Anti-Ageing Treatment - Final Results",
     category: "Anti-Ageing",
-    image: antiAgeing,
-    description: "Youthful, rejuvenated skin with Botox & dermal fillers",
+    image: antiAgeingTreatmentFinal,
+    description: "Visible skin tightening and rejuvenation with advanced therapy",
   },
   {
-    title: "Skin Rejuvenation",
+    title: "Skin Rejuvenation - Final Results",
     category: "Skin Glow",
-    image: skinRejuvenation,
-    description: "Radiant, glowing complexion after skin rejuvenation therapy",
+    image: skinRejuvenationFinal,
+    description: "Complete skin transformation with enhanced glow and texture",
   },
 ];
 
