@@ -13,6 +13,8 @@ import acneTreatmentResults from "@/assets/acne-treatment-results.jpg";
 import pigmentationCorrection from "@/assets/pigmentation-correction.jpg";
 import hairRegrowthResults from "@/assets/hair-regrowth-results.jpg";
 import skinRejuvenationResults from "@/assets/skin-rejuvenation-results.jpg";
+import pigmentationCorrectionGallery from "@/assets/gallery/pigmentation-correction.jpg";
+import antiAgeingTransformations from "@/assets/gallery/anti-ageing-transformations.jpg";
 
 const Home = () => {
   const carouselRef = useRef(null);
@@ -152,7 +154,7 @@ const Home = () => {
             Read More About Us <ArrowRight size={16} />
           </Link>
         </div>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
           <div className="group rounded-2xl overflow-hidden shadow-card hover:shadow-soft transition bg-gradient-to-br from-teal-50 to-cyan-50 border border-teal-100">
             <div className="aspect-[4/3] overflow-hidden">
               <img
@@ -171,7 +173,7 @@ const Home = () => {
           <div className="group rounded-2xl overflow-hidden shadow-card hover:shadow-soft transition bg-gradient-to-br from-rose-50 to-pink-50 border border-rose-100">
             <div className="aspect-[4/3] overflow-hidden">
               <img
-                src={pigmentationCorrection}
+                src={pigmentationCorrectionGallery}
                 alt="Pigmentation Correction"
                 loading="lazy"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -179,7 +181,22 @@ const Home = () => {
             </div>
             <div className="p-4">
               <h3 className="font-serif text-lg font-bold text-slate-900">Pigmentation Correction</h3>
-              <p className="text-xs text-muted-foreground mt-1">Real patient transformations</p>
+              <p className="text-xs text-muted-foreground mt-1">Even skin tone achieved</p>
+            </div>
+          </div>
+
+          <div className="group rounded-2xl overflow-hidden shadow-card hover:shadow-soft transition bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-100">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img
+                src={antiAgeingTransformations}
+                alt="Anti-Ageing Transformations"
+                loading="lazy"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-serif text-lg font-bold text-slate-900">Anti-Ageing Transformations</h3>
+              <p className="text-xs text-muted-foreground mt-1">Youthful, rejuvenated skin</p>
             </div>
           </div>
 

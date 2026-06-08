@@ -1,11 +1,11 @@
 import doctor from "@/assets/doctor.jpg";
-import { Award, Stethoscope } from "lucide-react";
+import { Award } from "lucide-react";
 import acneTreatmentFinal from "@/assets/gallery/acne-treatment-final.jpg";
-import pigmentationCorrection from "@/assets/gallery/pigmentation-correction.jpg";
 import pigmentationCorrectionFinal from "@/assets/gallery/pigmentation-correction-final.jpg";
-import antiAgeingTransformations from "@/assets/gallery/anti-ageing-transformations.jpg";
 import antiAgeingTreatmentFinal from "@/assets/gallery/anti-ageing-treatment-final.jpg";
 import skinRejuvenationFinal from "@/assets/gallery/skin-rejuvenation-final.jpg";
+import hairRegrowth from "@/assets/gallery/hair-regrowth.jpg";
+import laserHair from "@/assets/gallery/laser-hair.jpg";
 
 type GalleryItem = {
   title: string;
@@ -23,22 +23,22 @@ const galleryItems: GalleryItem[] = [
     description: "Clear, smooth skin after personalized acne treatment plan",
   },
   {
-    title: "Pigmentation Correction",
-    category: "Skin Brightening",
-    image: pigmentationCorrection,
-    description: "Even skin tone achieved through targeted pigmentation therapy",
-  },
-  {
     title: "Pigmentation Correction - Final Results",
     category: "Skin Brightening",
     image: pigmentationCorrectionFinal,
     description: "Dramatic pigmentation improvement with visible results",
   },
   {
-    title: "Anti-Ageing Transformations",
-    category: "Anti-Ageing",
-    image: antiAgeingTransformations,
-    description: "Youthful, rejuvenated skin with advanced anti-ageing procedures",
+    title: "Hair Regrowth Transformation",
+    category: "Hair Restoration",
+    image: hairRegrowth,
+    description: "Visible hair density improvement with PRP & GFC therapy",
+  },
+  {
+    title: "Laser Hair Reduction",
+    category: "Laser Treatments",
+    image: laserHair,
+    description: "Smooth, hair-free skin after laser hair removal sessions",
   },
   {
     title: "Anti-Ageing Treatment - Final Results",
