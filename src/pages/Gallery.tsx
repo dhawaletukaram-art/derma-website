@@ -1,5 +1,11 @@
-import hairRegrowth from "@/assets/gallery/hair-regrowth.jpg";
-import laserHair from "@/assets/gallery/laser-hair.jpg";
+import doctor from "@/assets/doctor.jpg";
+import { Award, Stethoscope } from "lucide-react";
+import acneTreatmentFinal from "@/assets/gallery/acne-treatment-final.jpg";
+import pigmentationCorrection from "@/assets/gallery/pigmentation-correction.jpg";
+import pigmentationCorrectionFinal from "@/assets/gallery/pigmentation-correction-final.jpg";
+import antiAgeingTransformations from "@/assets/gallery/anti-ageing-transformations.jpg";
+import antiAgeingTreatmentFinal from "@/assets/gallery/anti-ageing-treatment-final.jpg";
+import skinRejuvenationFinal from "@/assets/gallery/skin-rejuvenation-final.jpg";
 
 type GalleryItem = {
   title: string;
@@ -11,16 +17,40 @@ type GalleryItem = {
 // Real patient transformation images
 const galleryItems: GalleryItem[] = [
   {
-    title: "Hair Regrowth Transformation",
-    category: "Hair Restoration",
-    image: hairRegrowth,
-    description: "Visible hair density improvement with PRP & GFC therapy",
+    title: "Acne Treatment Results",
+    category: "Acne Care",
+    image: acneTreatmentFinal,
+    description: "Clear, smooth skin after personalized acne treatment plan",
   },
   {
-    title: "Laser Hair Reduction",
-    category: "Laser Treatments",
-    image: laserHair,
-    description: "Smooth, hair-free skin after laser hair removal sessions",
+    title: "Pigmentation Correction",
+    category: "Skin Brightening",
+    image: pigmentationCorrection,
+    description: "Even skin tone achieved through targeted pigmentation therapy",
+  },
+  {
+    title: "Pigmentation Correction - Final Results",
+    category: "Skin Brightening",
+    image: pigmentationCorrectionFinal,
+    description: "Dramatic pigmentation improvement with visible results",
+  },
+  {
+    title: "Anti-Ageing Transformations",
+    category: "Anti-Ageing",
+    image: antiAgeingTransformations,
+    description: "Youthful, rejuvenated skin with advanced anti-ageing procedures",
+  },
+  {
+    title: "Anti-Ageing Treatment - Final Results",
+    category: "Anti-Ageing",
+    image: antiAgeingTreatmentFinal,
+    description: "Visible skin tightening and rejuvenation with advanced therapy",
+  },
+  {
+    title: "Skin Rejuvenation - Final Results",
+    category: "Skin Glow",
+    image: skinRejuvenationFinal,
+    description: "Complete skin transformation with enhanced glow and texture",
   },
 ];
 
@@ -38,6 +68,29 @@ const Gallery = () => (
           <h1 className="font-serif text-6xl md:text-7xl font-black bg-gradient-to-r from-slate-900 via-amber-800 to-slate-900 bg-clip-text text-transparent leading-tight">Real Transformations</h1>
           <p className="mt-5 text-lg font-medium text-slate-700">Before & After Results</p>
           <p className="mt-2 font-medium text-slate-700">Witness visible improvements through our advanced dermatology and aesthetic treatments</p>
+        </div>
+      </div>
+    </section>
+
+    <section className="bg-gradient-hero py-20">
+      <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center">
+        <img src={doctor} alt="Dr. Pradnya Asutkar" loading="lazy" width={800} height={1024} className="rounded-3xl shadow-soft object-cover w-full max-w-md" />
+        <div>
+          <span className="text-xs uppercase tracking-[0.25em] text-magenta font-semibold">Meet Your Dermatologist</span>
+          <h1 className="font-serif text-5xl md:text-6xl mt-3">Dr. Pradnya Asutkar</h1>
+          <p className="mt-3 text-lg text-muted-foreground font-semibold">Consultant Dermatologist · Cosmetologist · Aesthetic Physician · Trichologist · Dermatosurgeon · Venerologist</p>
+          <div className="mt-6 space-y-3">
+            <div className="p-4 rounded-xl bg-muted/40 border border-border">
+              <p className="text-foreground leading-relaxed"><span className="font-semibold">Specialized Expertise:</span> Comprehensive treatment of all dermatological conditions including medical, surgical, and aesthetic procedures. Also treats complex conditions like leprosy and sexually transmitted infections (STD/VD) with confidential, non-judgmental care.</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-3">
+              {["MBBS","MD (Skin & VD — Dermatology & Venereology)","Fellowship in Lasers","Fellowship in Cosmetology & Aesthetic Medicine","Trichology Specialist","Dermatosurgery Specialist"].map(q => (
+                <div key={q} className="flex items-center gap-2 text-foreground/80">
+                  <Award size={16} className="text-magenta" /> <span className="text-sm">{q}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
