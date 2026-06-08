@@ -3,6 +3,7 @@ import svcLaser from "@/assets/laser-treatments.jpg";
 import svcAntiAgeing from "@/assets/antiageing-treatment-new.jpg";
 import svcBridal from "@/assets/bridaltreatment.jpg";
 import svcHair from "@/assets/svc-hair.png";
+import svcSkinTreatments from "@/assets/skin-treatments-final.jpg";
 import procPrp from "@/assets/proc-prp.png";
 import procBotox from "@/assets/proc-botox.png";
 import procDermapen from "@/assets/microneedling.jpg";
@@ -61,7 +62,7 @@ export type Service = {
 
 const serviceImages: Record<string, string> = {
   "clinical-dermatology": clinicalDerm,
-  "skin": "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=1200&q=80",
+  "skin": svcSkinTreatments,
   "hair": svcHair,
   "laser": svcLaser,
   "anti-ageing": svcAntiAgeing,
