@@ -135,6 +135,30 @@ const Home = () => {
       </div>
     </section>
 
+    {/* Doctor Gallery Section */}
+    <section className="bg-gradient-hero py-20">
+      <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center">
+        <img src={doctorImg} alt="Dr. Pradnya Asutkar" loading="lazy" width={800} height={1024} className="rounded-3xl shadow-soft object-cover w-full max-w-md" />
+        <div>
+          <span className="text-xs uppercase tracking-[0.25em] text-magenta font-semibold">Meet Your Dermatologist</span>
+          <h1 className="font-serif text-5xl md:text-6xl mt-3">Dr. Pradnya Asutkar</h1>
+          <p className="mt-3 text-lg text-muted-foreground font-semibold">Consultant Dermatologist · Cosmetologist · Aesthetic Physician · Trichologist · Dermatosurgeon · Venerologist</p>
+          <div className="mt-6 space-y-3">
+            <div className="p-4 rounded-xl bg-muted/40 border border-border">
+              <p className="text-foreground leading-relaxed"><span className="font-semibold">Specialized Expertise:</span> Comprehensive treatment of all dermatological conditions including medical, surgical, and aesthetic procedures. Also treats complex conditions like leprosy and sexually transmitted infections (STD/VD) with confidential, non-judgmental care.</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-3">
+              {["MBBS","MD (Skin & VD — Dermatology & Venereology)","Fellowship in Lasers","Fellowship in Cosmetology & Aesthetic Medicine","Trichology Specialist","Dermatosurgery Specialist"].map(q => (
+                <div key={q} className="flex items-center gap-2 text-foreground/80">
+                  <Award size={16} className="text-magenta" /> <span className="text-sm">{q}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     {/* About preview */}
     <section className="container mx-auto py-20">
       <div className="grid lg:grid-cols-2 gap-12 items-center">
