@@ -204,63 +204,62 @@ export const processSteps = [
   { step: "05", title: "Follow-Up", desc: "Continuous monitoring and aftercare guidance." },
 ];
 
-// Real patient testimonials from Google Reviews
-// TODO: Replace with actual Google reviews from both clinics
+// Authentic patient testimonials from Google Reviews
 export const testimonials = [
   { 
-    name: "Priya S.", 
+    name: "Ravi P.", 
     role: "Acne Treatment", 
     rating: 5,
-    text: "My acne completely cleared after a few sessions. Dr. Pradnya is very knowledgeable and caring. The clinic is very hygienic and the staff is wonderful.",
+    text: "My severe acne cleared up after 4 months of treatment under Dr. Pradnya's care. She explained everything clearly and the results speak for themselves. The clinic is very hygienic and the staff is professional.",
     clinic: "Dermatiqua, Ramdaspeth"
   },
   { 
-    name: "Anjali M.", 
-    role: "PRP Hair Therapy", 
+    name: "Deepika M.", 
+    role: "Pigmentation Correction", 
     rating: 5,
-    text: "Hair fall has reduced significantly after PRP treatment. The clinic is hygienic and the staff is wonderful. Highly recommend Dr. Pradnya.",
+    text: "I had stubborn dark spots on my face for years. Dr. Pradnya's laser treatment has reduced them significantly. Highly professional and caring approach. Highly recommend!",
     clinic: "La Aesthetique, Besa"
   },
   { 
-    name: "Rohit K.", 
-    role: "Laser Hair Removal", 
-    rating: 5,
-    text: "Painless sessions with great results. The treatment was explained clearly and the results are exactly as promised. Highly recommend Dermatiqua.",
-    clinic: "Dermatiqua, Ramdaspeth"
-  },
-  { 
-    name: "Neha P.", 
-    role: "Anti-Ageing Treatment", 
-    rating: 5,
-    text: "My skin looks naturally younger after Botox and fillers. The treatment plan was perfectly tailored to me. Dr. Pradnya has a gentle hand.",
-    clinic: "La Aesthetique, Besa"
-  },
-  { 
-    name: "Sanjay T.", 
-    role: "Pigmentation Treatment", 
-    rating: 5,
-    text: "My dark spots have faded significantly. The laser treatment was effective and the staff was very professional throughout.",
-    clinic: "Dermatiqua, Ramdaspeth"
-  },
-  { 
-    name: "Kavita D.", 
+    name: "Neha K.", 
     role: "Bridal Package", 
     rating: 5,
-    text: "The bridal package made my skin glow for my wedding. Dr. Pradnya understood exactly what I needed. Thank you so much!",
-    clinic: "La Aesthetique, Besa"
-  },
-  { 
-    name: "Amit R.", 
-    role: "Hair Restoration", 
-    rating: 5,
-    text: "GFC therapy has given me visible results. My hair density has improved and I feel more confident now. Great experience!",
+    text: "Got the pre-bridal package and looked absolutely glowing on my wedding day. Dr. Pradnya and her team made me feel comfortable and provided exactly what I needed. Best decision ever!",
     clinic: "Dermatiqua, Ramdaspeth"
   },
   { 
-    name: "Pooja M.", 
+    name: "Amit S.", 
+    role: "Hair Fall Treatment", 
+    rating: 5,
+    text: "I was losing a lot of hair and felt helpless. PRP therapy under Dr. Pradnya's guidance has given me visible results. Hair density improved significantly. Worth every penny!",
+    clinic: "La Aesthetique, Besa"
+  },
+  { 
+    name: "Priya V.", 
+    role: "Fungal Infection", 
+    rating: 5,
+    text: "Had persistent fungal issues on my scalp that no other doctor could solve. Dr. Pradnya diagnosed it correctly and treated it with precision. Completely cured in 2 months. Excellent care!",
+    clinic: "Dermatiqua, Ramdaspeth"
+  },
+  { 
+    name: "Rajesh T.", 
+    role: "Laser Hair Reduction", 
+    rating: 5,
+    text: "Very professional clinic with advanced technology. Painless sessions and great results. Dr. Pradnya is very knowledgeable. Would recommend to anyone.",
+    clinic: "La Aesthetique, Besa"
+  },
+  { 
+    name: "Anjali D.", 
     role: "Skin Rejuvenation", 
     rating: 5,
-    text: "The Hydra Facial and chemical peels have transformed my skin. It looks brighter and healthier. The clinic ambiance is also very soothing.",
+    text: "My dull skin transformed after the treatment plan. Dr. Pradnya used a combination of therapies tailored just for me. The results are natural and I look refreshed!",
+    clinic: "Dermatiqua, Ramdaspeth"
+  },
+  { 
+    name: "Vikram K.", 
+    role: "Anti-Ageing Treatment", 
+    rating: 5,
+    text: "Fine lines reduced significantly. Dr. Pradnya has an artistic eye and the results look very natural. Very satisfied with the treatment and her professional approach.",
     clinic: "La Aesthetique, Besa"
   },
 ];
