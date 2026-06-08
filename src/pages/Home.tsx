@@ -152,6 +152,11 @@ const Home = () => {
               <p className="text-foreground leading-relaxed"><span className="font-semibold text-lg">Specialized Expertise:</span> Comprehensive treatment of all dermatological conditions including medical, surgical, and aesthetic procedures. Also treats complex conditions like leprosy and sexually transmitted infections (STD/VD) with confidential, non-judgmental care.</p>
             </div>
 
+            <div className="space-y-4 mb-8 text-muted-foreground leading-relaxed">
+              <p>Dr. Pradnya Asutkar is a qualified dermatologist with a decade of experience in clinical dermatology, advanced laser procedures and aesthetic medicine. She has successfully treated thousands of patients across Nagpur for chronic skin conditions including psoriasis, vitiligo, fungal infections, eczema and severe acne — alongside hair restoration and modern cosmetic dermatology.</p>
+              <p>Her practice combines evidence-based medical dermatology with the latest FDA-approved laser and aesthetic technologies. Every treatment plan is personalised after a detailed skin analysis, with a focus on safety, ethics, transparent pricing and long-term, natural-looking results.</p>
+            </div>
+
             <div className="grid md:grid-cols-2 gap-4">
               {["MBBS","MD (Skin & VD — Dermatology & Venereology)","Fellowship in Lasers","Fellowship in Cosmetology & Aesthetic Medicine","Trichology Specialist","Dermatosurgery Specialist"].map(q => (
                 <div key={q} className="flex items-start gap-3 p-3 rounded-lg bg-muted/30 border border-border/50">
