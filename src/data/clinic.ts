@@ -77,14 +77,14 @@ const baseServices: Service[] = [
     icon: Stethoscope,
     cta: "Explore Clinical Dermatology",
     treatments: [
-      { name: "Fungal Infections" },
-      { name: "Psoriasis Management" },
-      { name: "Vitiligo Treatment" },
-      { name: "Eczema & Allergies" },
-      { name: "Acne & Rosacea" },
-      { name: "Autoimmune Skin Disorders" },
-      { name: "Bacterial & Viral Infections" },
-      { name: "Advanced Therapies" },
+      { name: "Fungal Infections", desc: "Diagnosis and treatment of ringworm, candidiasis and resistant fungal infections." },
+      { name: "Psoriasis Management", desc: "Comprehensive care including topical, systemic and biologic therapies." },
+      { name: "Vitiligo Treatment", desc: "Phototherapy, topical and advanced surgical options for repigmentation." },
+      { name: "Eczema & Allergies", desc: "Patch testing and personalised plans for atopic dermatitis and skin allergies." },
+      { name: "Acne & Rosacea", desc: "Medical management of inflammatory acne, cystic acne and rosacea." },
+      { name: "Autoimmune Skin Disorders", desc: "Care for lichen planus, pemphigus, lupus and connective tissue disorders." },
+      { name: "Bacterial & Viral Infections", desc: "Treatment of impetigo, herpes, warts and molluscum contagiosum." },
+      { name: "Advanced Therapies", desc: "Biologics, immunomodulators and phototherapy for resistant skin diseases." },
     ],
   },
   {
@@ -95,19 +95,15 @@ const baseServices: Service[] = [
     icon: Sparkles,
     cta: "Explore Skin Treatments",
     treatments: [
-      { name: "Acne Scar Treatment" },
-      { name: "Microdermabrasion (Skin Polishing)" },
-      { name: "Chemical Peel" },
-      { name: "Pigment Reduction" },
-      { name: "Intralesional Injection" },
-      { name: "Cryotherapy" },
-      { name: "Wart & Skin Tag Removal" },
-      { name: "Hydra Facial" },
-      { name: "Woods Lamp Examination" },
-      { name: "Dermoscopy & Onychoscopy" },
-      { name: "Exosomes" },
-      { name: "Glow Peels" },
-      { name: "Ear & Nose Piercing" },
+      { name: "Acne Scar Treatment", desc: "Targeted procedures to reduce acne scars and improve skin texture." },
+      { name: "Chemical Peels", desc: "Exfoliating treatments to brighten skin tone and texture." },
+      { name: "Pigmentation Reduction", desc: "Treatments for melasma, dark spots, and uneven skin tone." },
+      { name: "Hydra Facial", desc: "Deep cleansing and hydration for glowing, refreshed skin." },
+      { name: "Wart & Skin Tag Removal", desc: "Safe, in-clinic removal of warts and skin tags." },
+      { name: "Cryotherapy", desc: "Freezing therapy for warts, skin tags, and select lesions." },
+      { name: "Dermoscopy & Onychoscopy", desc: "Advanced diagnostics for skin and nail examination." },
+      { name: "Intralesional Injections", desc: "Precision treatment for specific skin conditions." },
+      { name: "Microdermabrasion", desc: "Gentle exfoliation for smoother, fresher-looking skin." },
     ],
   },
   {
@@ -118,16 +114,14 @@ const baseServices: Service[] = [
     icon: Scissors,
     cta: "Explore Hair Treatments",
     treatments: [
-      { name: "Platelet Rich Plasma Mesotherapy (PRP)" },
-      { name: "GFC Mesotherapy" },
-      { name: "Stem Cell Therapy" },
-      { name: "Hair Threads" },
-      { name: "Derma Roller" },
-      { name: "Derma Pen" },
-      { name: "Laser Cap" },
-      { name: "Trichoscopy" },
-      { name: "Exosomes" },
-      { name: "Injectable Dutasteride" },
+      { name: "PRP Therapy", desc: "Platelet-rich plasma to stimulate natural hair growth." },
+      { name: "GFC Mesotherapy", desc: "Growth factor concentrate therapy for hair density." },
+      { name: "Stem Cell Therapy", desc: "Advanced regenerative treatment for hair restoration." },
+      { name: "Hair Threads", desc: "Thread-based stimulation for follicle health." },
+      { name: "Derma Roller", desc: "Microneedling for scalp stimulation and hair growth." },
+      { name: "Derma Pen", desc: "Precision microneedling for hair regrowth therapy." },
+      { name: "Trichoscopy", desc: "Digital scalp and hair analysis for accurate diagnosis." },
+      { name: "Laser Cap Therapy", desc: "Low-level laser therapy for hair density." },
     ],
   },
   {
@@ -138,14 +132,13 @@ const baseServices: Service[] = [
     icon: Zap,
     cta: "Explore Laser Treatments",
     treatments: [
-      { name: "Laser Hair Reduction" },
-      { name: "Tattoo Removal" },
-      { name: "Laser Facial" },
-      { name: "Laser Rejuvenation" },
-      { name: "Pigmentation Removal" },
-      { name: "Skin Rejuvenation" },
-      { name: "Scar Reduction" },
-      { name: "Stretch Mark Reduction" },
+      { name: "Permanent Hair Removal", desc: "Long-lasting laser hair reduction for all body areas." },
+      { name: "Tattoo Removal", desc: "Safe laser removal of unwanted tattoos." },
+      { name: "Laser Facial", desc: "Brightening laser facial for radiant skin." },
+      { name: "Pigmentation Removal", desc: "Targeted laser treatment for pigmentation and dark spots." },
+      { name: "Scar Reduction", desc: "Laser procedures to minimise scars and irregularities." },
+      { name: "Stretch Marks Reduction", desc: "Advanced treatments to reduce stretch marks." },
+      { name: "Skin Rejuvenation", desc: "Laser therapy for youthful, radiant skin." },
     ],
   },
   {
@@ -156,11 +149,11 @@ const baseServices: Service[] = [
     icon: Flower2,
     cta: "Explore Anti-Ageing Treatments",
     treatments: [
-      { name: "Botox" },
-      { name: "Dermal Fillers" },
-      { name: "Skin Boosters" },
-      { name: "Threads for Skin Lifting" },
-      { name: "Skin Glow Injection Therapy" },
+      { name: "Botox", desc: "Reduces fine lines and wrinkles for a smoother appearance." },
+      { name: "Dermal Fillers", desc: "Restores volume and enhances facial contours." },
+      { name: "Skin Boosters", desc: "Hydrating injectables for radiant, plump skin." },
+      { name: "Skin Glow Therapy", desc: "Treatments for luminous, glowing complexion." },
+      { name: "Thread Lift Treatments", desc: "Non-surgical lifting and tightening using threads." },
     ],
   },
   {
@@ -171,14 +164,14 @@ const baseServices: Service[] = [
     icon: Crown,
     cta: "Explore Bridal Package",
     treatments: [
-      { name: "Pre-Bridal Skin Glow" },
-      { name: "Tan & Pigmentation Removal" },
-      { name: "Hydra Facial Series" },
-      { name: "Underarm & Body Polishing" },
-      { name: "Laser Hair Reduction" },
-      { name: "Anti-Acne & Scar Care" },
-      { name: "Hair Spa & PRP" },
-      { name: "Groom Grooming Package" },
+      { name: "Pre-Bridal Skin Glow", desc: "Customised facials, peels and skin boosters for a luminous complexion." },
+      { name: "Tan & Pigmentation Removal", desc: "Targeted treatments for even, bright skin tone before the wedding." },
+      { name: "Hydra Facial Series", desc: "Multi-session hydration and deep cleansing for radiant skin." },
+      { name: "Underarm & Body Polishing", desc: "Brightening treatments for underarms, neck, back and feet." },
+      { name: "Laser Hair Reduction", desc: "Long-term smooth, hair-free skin for full body or selected areas." },
+      { name: "Anti-Acne & Scar Care", desc: "Medical plans to clear active acne and reduce scars before the big day." },
+      { name: "Hair Spa & PRP", desc: "Scalp care, hair density and shine boosters for bride and groom." },
+      { name: "Groom Grooming Package", desc: "Tailored skin and hair plans for the groom's wedding-ready look." },
     ],
   },
 ];
@@ -202,63 +195,62 @@ export const processSteps = [
   { step: "05", title: "Follow-Up", desc: "Continuous monitoring and aftercare guidance." },
 ];
 
-// Real patient testimonials from Google Reviews
-// TODO: Replace with actual Google reviews from both clinics
+// Authentic patient testimonials from Google Reviews
 export const testimonials = [
-  { 
-    name: "Priya S.", 
-    role: "Acne Treatment", 
+  {
+    name: "Navin Bais",
+    role: "Acne Treatment",
     rating: 5,
-    text: "My acne completely cleared after a few sessions. Dr. Pradnya is very knowledgeable and caring. The clinic is very hygienic and the staff is wonderful.",
-    clinic: "Dermatiqua, Ramdaspeth"
-  },
-  { 
-    name: "Anjali M.", 
-    role: "PRP Hair Therapy", 
-    rating: 5,
-    text: "Hair fall has reduced significantly after PRP treatment. The clinic is hygienic and the staff is wonderful. Highly recommend Dr. Pradnya.",
+    text: "I am taking treatment from Dr. Pradnya mam for acne and got good results. She explains everything in detail and clearly. She is very knowledgeable and the best doctor. I highly recommend her. Happy with the results!",
     clinic: "La Aesthetique, Besa"
   },
-  { 
-    name: "Rohit K.", 
-    role: "Laser Hair Removal", 
+  {
+    name: "Pravin B. Sanap",
+    role: "Pigmentation Treatment",
     rating: 5,
-    text: "Painless sessions with great results. The treatment was explained clearly and the results are exactly as promised. Highly recommend Dermatiqua.",
-    clinic: "Dermatiqua, Ramdaspeth"
-  },
-  { 
-    name: "Neha P.", 
-    role: "Anti-Ageing Treatment", 
-    rating: 5,
-    text: "My skin looks naturally younger after Botox and fillers. The treatment plan was perfectly tailored to me. Dr. Pradnya has a gentle hand.",
+    text: "Best dermatologist in Nagpur. I visited the clinic for wrinkles and pigmentation and got wonderful results. I highly recommend her. Dr. Pradnya is an excellent dermatologist.",
     clinic: "La Aesthetique, Besa"
   },
-  { 
-    name: "Sanjay T.", 
-    role: "Pigmentation Treatment", 
+  {
+    name: "Anvesha Wandile",
+    role: "Skin Glow Treatment",
     rating: 5,
-    text: "My dark spots have faded significantly. The laser treatment was effective and the staff was very professional throughout.",
+    text: "First time we visited mam, she was so kind and her treatment was so good. After treatment my skin glow. She explains me very well. I love her nature and her treatment.",
     clinic: "Dermatiqua, Ramdaspeth"
   },
-  { 
-    name: "Kavita D.", 
-    role: "Bridal Package", 
+  {
+    name: "Asmita Khonde",
+    role: "Hair Fall Treatment",
     rating: 5,
-    text: "The bridal package made my skin glow for my wedding. Dr. Pradnya understood exactly what I needed. Thank you so much!",
+    text: "I visited Dr. Pradnya mam's clinic and got wonderful results for my hairfall problem. Mam is very experienced and the best dermatologist I have ever visited. The way she talks, you feel your half problem is solved. I highly recommend her.",
+    clinic: "Dermatiqua, Ramdaspeth"
+  },
+  {
+    name: "Sakshi Bisen",
+    role: "Skin Infection Treatment",
+    rating: 5,
+    text: "I have been with Dr. Pradnya mam for 2 years. She is very kind and gives 100% good treatment. Got great results for my infection treatment. I highly recommend her. Happy to be a part of La Aesthetique clinic.",
     clinic: "La Aesthetique, Besa"
   },
-  { 
-    name: "Amit R.", 
-    role: "Hair Restoration", 
+  {
+    name: "Suhasini Dunedar",
+    role: "Acne & Pigmentation",
     rating: 5,
-    text: "GFC therapy has given me visible results. My hair density has improved and I feel more confident now. Great experience!",
+    text: "I visited Dr. Pradnya Asutkar mam's clinic for my acne and pigmentation problem and got wonderful results. Best dermatologist in Nagpur. I highly recommend her.",
     clinic: "Dermatiqua, Ramdaspeth"
   },
-  { 
-    name: "Pooja M.", 
-    role: "Skin Rejuvenation", 
+  {
+    name: "Sayali Thawkar",
+    role: "Hair Fall Treatment",
     rating: 5,
-    text: "The Hydra Facial and chemical peels have transformed my skin. It looks brighter and healthier. The clinic ambiance is also very soothing.",
+    text: "I have a personal very good experience with Dr. Pradnya mam for my hairfall treatment. She is very helpful and kind. Her treatment was wonderful and I got the best results. I highly recommend her.",
+    clinic: "La Aesthetique, Besa"
+  },
+  {
+    name: "Akshay Ramteke",
+    role: "Skin Treatment",
+    rating: 5,
+    text: "Dr. Pradnya is amazing! She treated my daughter's rashes — the medicines worked perfectly and cleared everything without spots. Truly grateful for her expertise and care.",
     clinic: "La Aesthetique, Besa"
   },
 ];
