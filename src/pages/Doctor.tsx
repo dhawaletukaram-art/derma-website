@@ -14,7 +14,7 @@ const Doctor = () => (
             <span className="text-xs font-semibold text-emerald-700">Meet Your Doctor</span>
           </div>
           <h1 className="font-serif text-6xl md:text-7xl font-black bg-gradient-to-r from-slate-900 via-emerald-800 to-slate-900 bg-clip-text text-transparent leading-tight">Dr. Pradnya Asutkar</h1>
-          <p className="mt-5 text-lg font-medium text-slate-700">Dermatologist & Aesthetic Medicine Specialist</p>
+          <p className="mt-5 text-lg font-medium text-slate-700">Consultant Dermatologist · Cosmetologist · Aesthetic Physician · Trichologist · Dermatosurgeon · Venerologist</p>
         </div>
       </div>
     </section>
@@ -25,9 +25,9 @@ const Doctor = () => (
         <div>
           <span className="text-xs uppercase tracking-[0.25em] text-magenta font-semibold">Doctor Profile</span>
           <h1 className="font-serif text-5xl md:text-6xl mt-3">Dr. Pradnya Asutkar</h1>
-          <p className="mt-3 text-lg text-muted-foreground">Dermatologist & Aesthetic Medicine Specialist</p>
+          <p className="mt-3 text-lg text-muted-foreground">Dermatologist · Cosmetologist · Aesthetic Physician · Trichologist · Dermatosurgeon · Venerologist</p>
           <div className="mt-6 space-y-2">
-            {["MBBS","MD (Skin & VD)","Fellowship in Lasers","Fellowship in Cosmetology & Aesthetic Medicine"].map(q => (
+            {["MBBS","MD (Skin & VD — Dermatology & Venereology)","Fellowship in Lasers","Fellowship in Cosmetology & Aesthetic Medicine","Trichology Specialist","Dermatosurgery Specialist"].map(q => (
               <div key={q} className="flex items-center gap-2 text-foreground/80">
                 <GraduationCap size={16} className="text-primary" /> {q}
               </div>
@@ -41,9 +41,9 @@ const Doctor = () => (
     </section>
 
     <section className="container mx-auto py-20 max-w-4xl">
-      <h2 className="font-serif text-4xl mb-6">Areas of Expertise</h2>
+      <h2 className="font-serif text-4xl mb-6">Specializations & Expertise</h2>
       <div className="grid md:grid-cols-2 gap-3">
-        {["Acne & Acne Scar Management","Hair Fall & Hair Restoration","PRP & GFC Therapy","Laser Treatments","Pigmentation Solutions","Cosmetic Dermatology","Anti-Ageing Procedures"].map(a => (
+        {["Acne & Acne Scar Management","Hair Fall & Hair Restoration","PRP & GFC Therapy","Laser Treatments","Pigmentation Solutions","Cosmetic Dermatology","Anti-Ageing Procedures","Leprosy & Chronic Skin Conditions","Sexually Transmitted Infections (STD/VD)","Fungal & Bacterial Infections","Psoriasis & Eczema Management","Vitiligo Treatment","Dermatosurgery & Laser Surgery","Trichology & Scalp Disorders"].map(a => (
           <div key={a} className="p-4 rounded-xl bg-muted/40 border border-border flex items-center gap-3">
             <Award size={18} className="text-magenta" /> {a}
           </div>
