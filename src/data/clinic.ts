@@ -1,13 +1,13 @@
 import { Sparkles, Scissors, Zap, Flower2, Activity, Droplet, ShieldCheck, Stethoscope, HeartPulse, Crown } from "lucide-react";
-import svcLaser from "@/assets/svc-laser.png";
-import svcAntiAgeing from "@/assets/antiageing.jpg";
+import svcLaser from "@/assets/laser-treatments.jpg";
+import svcAntiAgeing from "@/assets/antiageing-treatment-new.jpg";
 import svcBridal from "@/assets/bridaltreatment.jpg";
 import svcHair from "@/assets/svc-hair.png";
 import procPrp from "@/assets/proc-prp.png";
 import procBotox from "@/assets/proc-botox.png";
 import procDermapen from "@/assets/microneedling.jpg";
 import procAcne from "@/assets/proc-acne.png";
-import clinicalDerm from "@/assets/clinicaldermatology.jpg";
+import clinicalDerm from "@/assets/clinical-dermatology-treatment.jpg";
 
 export const tagline = "Science Meets Aesthetic Beauty";
 export const googleBusinessLink = "https://share.google/9ouaX9Y66PbcQL9Fw";
@@ -198,15 +198,36 @@ export const processSteps = [
 // Authentic patient testimonials from Google Reviews
 export const testimonials = [
   {
+    name: "Unknown Reviewer",
+    role: "General Recommendation",
+    rating: 5,
+    text: "Very good clinic to be recommended for any type of skin treatment. Dr Pradnya is very soft spoken and cooperative. ❤️",
+    clinic: "La Aesthetique, Besa"
+  },
+  {
+    name: "Face Pores Patient",
+    role: "Online Consultation - Facial Pores",
+    rating: 5,
+    text: "I found the Dr. Pradnya very helpful for my face pores through online consultation. It's in Pushpkunj Complex, Ramdaspeth, Nagpur.",
+    clinic: "Dermatiqua, Ramdaspeth"
+  },
+  {
+    name: "Manish Gaydhane",
+    role: "Pigmentation & Acne Marks",
+    rating: 5,
+    text: "I have consulted Dr Pradnya mam for pigmentation and acne marks and got very good results. Thank you mam. Staff is very polite. I highly recommend her ❤️",
+    clinic: "Dermatiqua, Ramdaspeth"
+  },
+  {
     name: "Navin Bais",
     role: "Acne Treatment",
     rating: 5,
-    text: "I am taking treatment from Dr. Pradnya mam for acne and got good results. She explains everything in detail and clearly. She is very knowledgeable and the best doctor. I highly recommend her. Happy with the results!",
+    text: "I am taking treatment from Dr. Pradnya mam for acne and got good results. She explains everything in detail and clearly. She is very knowledgeable and the best doctor. I highly recommend her.",
     clinic: "La Aesthetique, Besa"
   },
   {
     name: "Pravin B. Sanap",
-    role: "Pigmentation Treatment",
+    role: "Pigmentation & Wrinkles",
     rating: 5,
     text: "Best dermatologist in Nagpur. I visited the clinic for wrinkles and pigmentation and got wonderful results. I highly recommend her. Dr. Pradnya is an excellent dermatologist.",
     clinic: "La Aesthetique, Besa"
@@ -230,27 +251,6 @@ export const testimonials = [
     role: "Skin Infection Treatment",
     rating: 5,
     text: "I have been with Dr. Pradnya mam for 2 years. She is very kind and gives 100% good treatment. Got great results for my infection treatment. I highly recommend her. Happy to be a part of La Aesthetique clinic.",
-    clinic: "La Aesthetique, Besa"
-  },
-  {
-    name: "Suhasini Dunedar",
-    role: "Acne & Pigmentation",
-    rating: 5,
-    text: "I visited Dr. Pradnya Asutkar mam's clinic for my acne and pigmentation problem and got wonderful results. Best dermatologist in Nagpur. I highly recommend her.",
-    clinic: "Dermatiqua, Ramdaspeth"
-  },
-  {
-    name: "Sayali Thawkar",
-    role: "Hair Fall Treatment",
-    rating: 5,
-    text: "I have a personal very good experience with Dr. Pradnya mam for my hairfall treatment. She is very helpful and kind. Her treatment was wonderful and I got the best results. I highly recommend her.",
-    clinic: "La Aesthetique, Besa"
-  },
-  {
-    name: "Akshay Ramteke",
-    role: "Skin Treatment",
-    rating: 5,
-    text: "Dr. Pradnya is amazing! She treated my daughter's rashes — the medicines worked perfectly and cleared everything without spots. Truly grateful for her expertise and care.",
     clinic: "La Aesthetique, Besa"
   },
 ];
