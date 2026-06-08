@@ -50,9 +50,19 @@ const Doctor = () => (
         ))}
       </div>
 
+      <h2 className="font-serif text-4xl mt-16 mb-4">Comprehensive Dermatological Care</h2>
+      <div className="space-y-4 text-muted-foreground leading-relaxed">
+        <p>
+          Dr. Pradnya Asutkar offers comprehensive dermatological services covering medical, surgical, and aesthetic aspects of skin and hair care. Her expertise extends to treating complex conditions including leprosy and sexually transmitted infections (STD/VD), ensuring compassionate and confidential care.
+        </p>
+        <p>
+          As a qualified Consultant Dermatologist with specializations in Cosmetology, Aesthetic Medicine, Trichology, and Dermatosurgery, she provides holistic solutions for all dermatological concerns — from chronic skin diseases to modern cosmetic procedures.
+        </p>
+      </div>
+
       <h2 className="font-serif text-4xl mt-16 mb-4">Patient-Focused Treatment Philosophy</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Dr. Pradnya Asutkar believes every patient deserves a personalized, ethical, and result-oriented treatment plan. Combining modern dermatology techniques with attentive care, she ensures each treatment is safe, effective, and tailored to individual concerns.
+        Dr. Pradnya Asutkar believes every patient deserves a personalized, ethical, and result-oriented treatment plan. Combining modern dermatology techniques with attentive care, she ensures each treatment is safe, effective, and tailored to individual concerns. She maintains complete confidentiality and provides non-judgmental medical care for all conditions, including sensitive issues.
       </p>
     </section>
   </div>
