@@ -147,7 +147,7 @@ const Home = () => {
             Read More About Us <ArrowRight size={16} />
           </Link>
         </div>
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-2 max-w-2xl">
           <div className="group rounded-2xl overflow-hidden shadow-card hover:shadow-soft transition bg-gradient-to-br from-teal-50 to-cyan-50 border border-teal-100">
             <div className="aspect-[4/3] overflow-hidden">
               <img
