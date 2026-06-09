@@ -83,7 +83,7 @@ const Services = () => {
             <h2 className="font-serif text-4xl mt-2 mb-4 group-hover:text-primary transition-colors duration-500">{s.title}</h2>
             <p className="text-muted-foreground mb-6 leading-relaxed">{s.short}</p>
             <div className="grid sm:grid-cols-2 gap-2 mb-7">
-              {s.treatments.slice(0, 6).map((t, idx) => (
+              {s.treatments.slice(0, 7).map((t, idx) => (
                 <div key={t.name} className="flex items-center gap-2 text-sm text-foreground/80 opacity-0 animate-fade-up" style={{ animationDelay: `${idx * 50}ms` }}>
                   <CheckCircle2 size={14} className="text-primary shrink-0 group-hover:scale-125 transition-transform duration-500" /> {t.name}
                 </div>
