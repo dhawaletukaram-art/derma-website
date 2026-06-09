@@ -53,9 +53,18 @@ const Appointment = () => {
       toast({ title: "Missing information", description: "Please pick a date, slot, and enter your name & phone.", variant: "destructive" });
       return;
     }
+    
+    // Format appointment details for WhatsApp
+    const appointmentType = mode === "clinic" ? "In-Clinic Appointment" : "Tele-Consultation";
+    const message = `Hello Dr. Pradnya,\n\nI would like to book an appointment.\n\nPatient Name: ${patient.name}\nPhone: ${patient.phone}\nEmail: ${patient.email || "N/A"}\n\nAppointment Type: ${appointmentType}\nDate: ${date}\nTime: ${slot}\n\nReason for visit: ${patient.notes || "N/A"}\n\nPlease confirm my appointment. Thank you!`;
+    
+    // Open WhatsApp with pre-filled message
+    const whatsappLink = `https://wa.me/918459323304?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, "_blank");
+    
     toast({
       title: "Appointment Requested",
-      description: `${mode === "clinic" ? "In-Clinic" : "Tele-Consult"} on ${date} at ${slot}. We'll confirm shortly.`,
+      description: `${appointmentType} on ${date} at ${slot}. Opening WhatsApp to confirm...`,
     });
     setSlot(null);
     setPatient({ name: "", phone: "", email: "", notes: "" });
