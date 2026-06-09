@@ -199,7 +199,7 @@ export const processSteps = [
 // Authentic patient testimonials from Google Reviews
 export const testimonials = [
   {
-    name: "Unknown Reviewer",
+    name: "Satisfied Patient",
     role: "General Recommendation",
     rating: 5,
     text: "Very good clinic to be recommended for any type of skin treatment. Dr Pradnya is very soft spoken and cooperative. ❤️",
