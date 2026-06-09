@@ -254,6 +254,34 @@ export const testimonials = [
     text: "I have been with Dr. Pradnya mam for 2 years. She is very kind and gives 100% good treatment. Got great results for my infection treatment. I highly recommend her. Happy to be a part of La Aesthetique clinic.",
     clinic: "La Aesthetique, Besa"
   },
+  {
+    name: "Rashmi Sakharwade",
+    role: "Pre-Bridal Beauty Treatment",
+    rating: 5,
+    text: "I consulted Dr. Pradnya Asutkar ma'am for pre-bridal beauty treatment and skin polishing for my wedding. I got excellent results with the treatment she suggested. She is very talented and skilled — the best dermatologist I've ever met. I highly recommend her. Thank you ma'am!",
+    clinic: "La Aesthetique, Besa"
+  },
+  {
+    name: "Kiran Gokhale",
+    role: "Hair Fall & Allergy Treatment",
+    rating: 5,
+    text: "I got excellent results in hairfall treatment. I was also suffering from allergy for the last 5 years. Dr. Pradnya advised me blood tests and after following her advice and treatment, I am now free from allergy. She has great expertise in hair procedures and her counseling is very nice. I recommend everyone to visit her clinic.",
+    clinic: "La Aesthetique, Besa"
+  },
+  {
+    name: "Pragati Kul",
+    role: "Acne Treatment",
+    rating: 5,
+    text: "I visited La Aesthetique for persistent acne and within a few weeks my skin improved drastically. Dr. Asutkar explained the root cause of my pimples instead of just prescribing creams. Clean clinic, professional staff, and visible results. Thank you so much ma'am for making me feel confident!",
+    clinic: "La Aesthetique, Besa"
+  },
+  {
+    name: "Sameer Moon",
+    role: "Father-in-Law Psoriasis Treatment",
+    rating: 5,
+    text: "I consulted Dr. Pradnya mam for my father-in-law who was suffering from long-term psoriasis. He was admitted to the hospital under her guidance and recovered within a week of starting treatment. We are very happy with her consultation. I strongly recommend Dr. Pradnya mam for any skin-related issues.",
+    clinic: "La Aesthetique, Besa"
+  },
 ];
 
 export type VideoTestimonial = {
