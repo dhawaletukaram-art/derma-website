@@ -32,7 +32,7 @@ const Doctor = () => (
           </div>
 
           <div className="mt-6 space-y-2">
-            {["MBBS","MD (Skin & VD — Dermatology & Venereology)","Fellowship in Lasers","Fellowship in Cosmetology & Aesthetic Medicine","Trichology Specialist","Dermatosurgery Specialist"].map(q => (
+            {["MBBS","MD (Skin & VD — Dermatology & Venereal Disease)","Fellowship in Lasers","Fellowship in Cosmetology & Aesthetic Medicine","Trichology Specialist","Dermatosurgery Specialist"].map(q => (
               <div key={q} className="flex items-center gap-2 text-foreground/80">
                 <GraduationCap size={16} className="text-primary" /> {q}
               </div>

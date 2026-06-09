@@ -96,7 +96,7 @@ const Home = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-3 mb-8">
-              {["MBBS","MD (Skin & VD — Dermatology & Venereology)","Fellowship in Lasers","Fellowship in Cosmetology & Aesthetic Medicine","Trichology Specialist","Dermatosurgery Specialist"].map(q => (
+              {["MBBS","MD (Skin & VD — Dermatology & Venereal Disease)","Fellowship in Lasers","Fellowship in Cosmetology & Aesthetic Medicine","Trichology Specialist","Dermatosurgery Specialist"].map(q => (
                 <div key={q} className="flex items-start gap-3 p-3 rounded-lg bg-white border border-border/60 hover:border-magenta/30 hover:bg-magenta/5 transition">
                   <Award size={16} className="text-magenta mt-0.5 shrink-0" /> <span className="text-sm text-foreground">{q}</span>
                 </div>
