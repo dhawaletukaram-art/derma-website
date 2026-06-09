@@ -127,7 +127,7 @@ const baseServices: Service[] = [
       { name: "Derma Pen", desc: "Precision microneedling for hair regrowth therapy." },
       { name: "Laser Cap", desc: "Low-level laser therapy for hair density." },
       { name: "Exosomes", desc: "Advanced regenerative therapy for hair restoration." },
-      { name: "Trichology", desc: "Specialized diagnosis and treatment of hair and scalp disorders." },
+      { name: "Trichoscopy", desc: "Specialized diagnosis and treatment of hair and scalp disorders." },
       { name: "Injectable Dutasteride", desc: "Advanced injectable therapy for hair restoration and prevention of hair loss." },
     ],
   },
