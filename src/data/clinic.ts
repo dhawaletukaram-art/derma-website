@@ -133,13 +133,13 @@ const baseServices: Service[] = [
     icon: Zap,
     cta: "Explore Laser Treatments",
     treatments: [
-      { name: "Permanent Hair Removal", desc: "Long-lasting laser hair reduction for all body areas." },
+      { name: "Laser Hair Reduction", desc: "Long-lasting laser hair reduction for all body areas." },
       { name: "Tattoo Removal", desc: "Safe laser removal of unwanted tattoos." },
-      { name: "Laser Facial", desc: "Brightening laser facial for radiant skin." },
+      { name: "Laser Facial Rejuvenation", desc: "Brightening laser facial for radiant skin." },
       { name: "Pigmentation Removal", desc: "Targeted laser treatment for pigmentation and dark spots." },
-      { name: "Scar Reduction", desc: "Laser procedures to minimise scars and irregularities." },
-      { name: "Stretch Marks Reduction", desc: "Advanced treatments to reduce stretch marks." },
       { name: "Skin Rejuvenation", desc: "Laser therapy for youthful, radiant skin." },
+      { name: "Scar Reduction", desc: "Laser procedures to minimise scars and irregularities." },
+      { name: "Stretch Mark Reduction", desc: "Advanced treatments to reduce stretch marks." },
     ],
   },
   {
