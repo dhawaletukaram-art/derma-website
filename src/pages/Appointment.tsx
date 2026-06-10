@@ -113,7 +113,7 @@ const Appointment = () => {
             <p className="text-sm text-muted-foreground leading-relaxed">
               Dr. Pradnya Asutkar is a board-certified dermatologist known for her compassionate and ethical approach to patient care.
               She specializes in advanced skin, hair, and laser treatments, combining medical expertise with aesthetic precision to deliver
-              safe, effective, and result-oriented procedures for skin rejuvenation, pigmentation, hair restoration, and anti-ageing care.
+              safe, effective, and result-oriented procedures for skin rejuvenation, pigmentation, hair restoration, anti-ageing care, and venereal diseases.
             </p>
           </div>
 

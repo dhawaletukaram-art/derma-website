@@ -118,7 +118,7 @@ const Home = () => {
           { k: "MBBS, MD", v: "Skin & VD" },
           { k: "Fellowship", v: "Lasers" },
           { k: "Fellowship", v: "Cosmetology & Aesthetic Medicine" },
-          { k: "Trusted by", v: "1000+ Patients in Nagpur" },
+          { k: "Trusted by", v: "5000+ Patients in Nagpur" },
         ].map(c => (
           <div key={c.v}>
             <div className="font-serif text-2xl text-primary">{c.k}</div>
